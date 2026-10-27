@@ -125,6 +125,62 @@ footer{padding:30px 15px 50px;background:#e8ecdf;color:var(--sage);font-family:"
  .gate-foot{margin-top:8px}
 }
 
+
+/* Transformative luxury styling for the inner invitation pages */
+:root{--midnight:#172c22;--deep:#243d2f;--champagne:#e7d19a;--antique:#a77c3e}
+body{background:#17271f}
+section:not(.hero){isolation:isolate}
+section:not(.hero):before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 14% 18%,#d9c17a26,transparent 32%),radial-gradient(ellipse at 86% 82%,#8ca08330,transparent 35%),linear-gradient(135deg,#20392d 0%,#314b3a 42%,#172b21 100%)}
+section:not(.hero):after{content:"✦     ❧     ✦";position:absolute;z-index:-1;inset:0;display:flex;align-items:center;justify-content:center;font:clamp(8rem,25vw,20rem) "Cormorant Garamond",serif;letter-spacing:.08em;color:#e8d29a08;pointer-events:none;white-space:nowrap}
+section#celebrations{background:transparent!important}
+section#countdownSection{background:transparent!important}
+section#families{background:transparent!important}
+.paper{background:linear-gradient(145deg,#fffdf7f5 0%,#f3edddf2 52%,#fbf7ecf7 100%);border:1px solid #d4bc80;box-shadow:0 25px 80px #06110c66, inset 0 0 0 5px #fff9, inset 0 0 0 6px #c5a76a55;backdrop-filter:blur(5px)}
+.paper:before{inset:12px;border:1px solid #c4a56780}
+.paper:after{content:"";position:absolute;top:18px;left:50%;width:52px;height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#b79553,transparent)}
+section:not(.hero) .paper{transform:translateY(0);transition:box-shadow .5s ease,border-color .5s ease}
+section:not(.hero) .paper:hover{box-shadow:0 32px 90px #06110c80,inset 0 0 0 5px #fff9,inset 0 0 0 6px #c5a76a88;border-color:#e5ce91}
+section:not(.hero) .eyebrow,section:not(.hero) .small{color:#8a6a35}
+section:not(.hero) h2{color:#203c2d;text-shadow:0 1px #fff}
+section:not(.hero) .rule{height:2px;width:90px;background:linear-gradient(90deg,transparent,#b58b48,#ead8a4,#b58b48,transparent)}
+.family-grid{gap:22px}
+.family-card{position:relative;overflow:hidden;padding:30px 18px;background:linear-gradient(145deg,#f8f2e4,#e9e4d2);border:1px solid #c4a66b;box-shadow:0 12px 30px #21372913}
+.family-card:before{content:"❦";position:absolute;top:-24px;right:-3px;font:5rem "Cormorant Garamond",serif;color:#b8995b1d;transform:rotate(15deg)}
+.family-card:after{content:"";position:absolute;left:18%;right:18%;bottom:0;height:2px;background:linear-gradient(90deg,transparent,#b28a48,transparent)}
+.family-card h3{font-size:2rem}
+.event-grid{gap:20px;perspective:1000px}
+.event{position:relative;isolation:isolate;overflow:hidden;padding:34px 18px 28px;border:1px solid #c9ad70;background:linear-gradient(155deg,#fffaf0 0%,#f1ead8 55%,#e4e4d2 100%);box-shadow:0 18px 38px #09170f2e,inset 0 0 0 5px #fff9,inset 0 0 0 6px #c4a46455;transition:transform .45s ease,box-shadow .45s ease,border-color .45s ease}
+.event:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 0%,#e2ca8c70,transparent 58%);pointer-events:none}
+.event:after{content:"";position:absolute;z-index:-1;left:50%;bottom:-46px;width:140px;height:140px;border:1px solid #b38c4b40;border-radius:50%;transform:translateX(-50%);box-shadow:0 0 0 12px #b38c4b0a,0 0 0 25px #b38c4b08}
+.event:hover{transform:translateY(-8px);box-shadow:0 27px 48px #07130d45,inset 0 0 0 5px #fff9,inset 0 0 0 6px #c4a46488;border-color:#e2c77f}
+.event .symbol{display:grid;place-items:center;width:52px;height:52px;border:1px solid #c7a45d;border-radius:50%;background:linear-gradient(145deg,#fff9e9,#e9dbb7);color:#9c7539;box-shadow:0 0 0 5px #c5a76a17;font-size:1.8rem}
+.event .day{margin-top:12px;color:#9b773c}
+.event h3{font-size:2rem;margin-top:7px}
+.event .date{color:#344c38;font-size:1.35rem}
+.event .desc{color:#51564a}
+.event .eyebrow{margin-top:4px;color:#8a6a35}
+.event .button{margin-top:18px;background:#203b2d;color:#fff5dc;border-color:#b99a5d;box-shadow:0 5px 15px #1c302322}
+.event .button:hover{background:#b18a4b;color:#172b20}
+.countdown{gap:clamp(12px,4vw,30px)}
+.unit{min-width:78px;padding:15px 12px 12px;border:1px solid #c5a76b;background:linear-gradient(145deg,#fffaf0,#e9e2cf);box-shadow:0 8px 20px #25372914}
+.unit strong{color:#244231}
+.unit span{color:#8a6a35}
+#countdownSection .paper{background:linear-gradient(145deg,#fffdf6f8,#eee7d5f8)}
+#countdownSection h1{color:#203c2d}
+#countdownSection h1 span{color:#b08a49!important}
+footer{position:relative;overflow:hidden;background:linear-gradient(135deg,#13271d,#2d4735);color:#e2cb8c;border-top:1px solid #b99a5d;box-shadow:0 -12px 40px #07130d20}
+footer:before{content:"✧  ❧  ✧";display:block;font:1.5rem "Cormorant Garamond",serif;color:#d9bd7c;margin-bottom:10px;letter-spacing:.4em}
+@media(max-width:640px){
+ section:not(.hero):before{background:radial-gradient(ellipse at 15% 12%,#d9c17a1c,transparent 30%),radial-gradient(ellipse at 90% 90%,#8ca08324,transparent 32%),linear-gradient(145deg,#20392d,#172b21)}
+ .paper{box-shadow:0 18px 48px #06110c55,inset 0 0 0 4px #fff9,inset 0 0 0 5px #c5a76a55}
+ .paper:before{inset:9px}
+ .family-grid{gap:16px}
+ .family-card{padding:25px 15px}
+ .event{padding:28px 18px 24px}
+ .event:hover{transform:none}
+ .unit{min-width:62px;padding:12px 8px 10px}
+}
+
 </style>
 </head>
 <body>
