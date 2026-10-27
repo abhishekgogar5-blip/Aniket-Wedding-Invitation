@@ -65,16 +65,104 @@ footer{padding:30px 15px 50px;background:#e8ecdf;color:var(--sage);font-family:"
 }
 
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Luxury ceremonial entrance */
+#opening{isolation:isolate;overflow:hidden;background:#101e18;perspective:1600px;transition:opacity 1.35s ease,visibility 1.35s ease}
+#opening:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%,#496653 0%,#203a2d 34%,#0b1712 78%);z-index:-3}
+#opening:after{content:"";position:absolute;inset:14px;border:1px solid #c8a35d;outline:1px solid #9e793f;outline-offset:5px;pointer-events:none;z-index:8;opacity:.8}
+.gate-sky{position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 50px,#e7c77808 51px 52px),radial-gradient(ellipse at center,#e4c57a17,transparent 55%);animation:gateGlow 6s ease-in-out infinite alternate;z-index:-1}
+.gate-halo{position:absolute;width:min(82vw,760px);aspect-ratio:1;border:1px solid #d8b96f36;border-radius:50%;box-shadow:0 0 0 20px #d8b96f08,0 0 0 50px #d8b96f06,0 0 100px #e2bf7020;animation:haloPulse 5s ease-in-out infinite}
+.gate-arch{position:relative;width:min(650px,94vw);height:min(790px,94svh);min-height:600px;display:flex;align-items:center;flex-direction:column;padding-top:clamp(28px,6vh,62px);color:#f5e6bc}
+.gate-arch:before{content:"";position:absolute;inset:0 0 3%;border:2px solid #b99553;border-radius:48% 48% 2px 2px/24% 24% 2px 2px;box-shadow:inset 0 0 0 7px #1a3025,inset 0 0 0 9px #d6b56d55,0 0 60px #0008;pointer-events:none}
+.gate-arch:after{content:"";position:absolute;inset:12px 12px 3.5%;border:1px solid #d6b56d77;border-radius:48% 48% 1px 1px/24% 24% 1px 1px;pointer-events:none}
+.arch-crown{display:flex;align-items:center;justify-content:center;gap:13px;color:#e4c57c;font-size:1.15rem;margin-bottom:13px;animation:riseIn 1.2s both}
+.arch-crown i{width:clamp(28px,8vw,70px);height:1px;background:linear-gradient(90deg,transparent,#d9b86f)}
+.arch-title{font:500 .66rem Montserrat,sans-serif;letter-spacing:.3em;color:#e4c57c;margin-bottom:8px;animation:riseIn 1.3s .1s both}
+.gate-names{font:500 clamp(2.4rem,7vw,4rem) "Cormorant Garamond",serif;letter-spacing:.02em;text-shadow:0 2px 18px #0006;animation:riseIn 1.3s .18s both}
+.gate-names span{font:italic 1em "Cormorant Garamond",serif;color:#e0bf73}
+.gate-date{font:500 .65rem Montserrat,sans-serif;letter-spacing:.22em;color:#d9c99f;margin-top:6px;animation:riseIn 1.3s .24s both}
+.gate-doorway{position:relative;width:min(92%,510px);height:clamp(310px,47vh,440px);margin-top:18px;perspective:1300px;filter:drop-shadow(0 18px 20px #0007)}
+.gate-door{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;transform-style:preserve-3d;transition:transform 1.8s cubic-bezier(.68,-.05,.2,1),filter 1.8s ease;backface-visibility:hidden}
+.gate-door svg{width:100%;height:100%;display:block}
+.gate-left{left:0;transform-origin:left center}
+.gate-right{right:0;transform-origin:right center}
+.gate-center{position:absolute;z-index:4;left:0;right:0;top:50%;transform:translateY(-35%);display:flex;flex-direction:column;align-items:center;text-shadow:0 2px 10px #08130e}
+.gate-medallion{display:grid;place-items:center;width:64px;height:64px;border:1px solid #e3c57b;border-radius:50%;background:linear-gradient(145deg,#d9b86c,#9c7335);color:#203b2d;box-shadow:0 0 0 5px #203b2dcc,0 0 0 6px #d9b86c;font:500 1.5rem "Cormorant Garamond",serif}
+.gate-medallion span{color:#fff2cb}
+.gate-center p{margin:15px 0 10px;font:italic 1.15rem "Cormorant Garamond",serif;color:#f8ebc9}
+.gate-center .button{margin-top:8px;border-color:#e1c078;box-shadow:0 5px 24px #0005;text-shadow:none}
+.gate-center .button.primary{background:linear-gradient(135deg,#e7ce8b,#b58c4a);color:#1b3025}
+.gate-center .button:hover{transform:translateY(-2px);background:#f4e2ad;color:#1b3025}
+.gate-hint{margin-top:13px;font:500 .55rem Montserrat,sans-serif;letter-spacing:.2em;color:#e6d4a7;animation:hintBlink 2.2s ease-in-out infinite}
+.gate-foot{margin-top:17px;font:500 .55rem Montserrat,sans-serif;letter-spacing:.22em;color:#d4b66e;animation:riseIn 1.4s .35s both}
+#opening.gates-open .gate-left{transform:rotateY(-108deg);filter:brightness(.7)}
+#opening.gates-open .gate-right{transform:rotateY(108deg);filter:brightness(.7)}
+#opening.gates-open .gate-center{opacity:0;transition:opacity .35s ease}
+#opening.gates-open .gate-arch{transform:scale(1.035);transition:transform 1.7s ease}
+#opening.closed{opacity:0;visibility:hidden;pointer-events:none}
+@keyframes gateGlow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.08)}}
+@keyframes haloPulse{0%,100%{transform:scale(.96);opacity:.55}50%{transform:scale(1.04);opacity:1}}
+@keyframes riseIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes hintBlink{0%,100%{opacity:.55}50%{opacity:1}}
+@media(max-width:640px){
+ #opening:after{inset:8px;outline-offset:3px}
+ .gate-arch{width:96vw;height:min(760px,92svh);min-height:560px;padding-top:clamp(35px,7vh,65px)}
+ .gate-arch:before{inset:0 1px 2%}
+ .gate-arch:after{inset:10px 10px 2.5%}
+ .gate-names{font-size:clamp(2.35rem,10vw,3.2rem)}
+ .arch-title{font-size:.58rem;letter-spacing:.23em}
+ .gate-date{font-size:.58rem;letter-spacing:.16em}
+ .gate-doorway{width:94%;height:clamp(310px,45vh,410px);margin-top:22px}
+ .gate-center{transform:translateY(-25%)}
+ .gate-medallion{width:54px;height:54px;font-size:1.3rem}
+ .gate-center p{font-size:1.05rem}
+ .gate-center .button{font-size:.62rem;padding:12px 13px;width:auto}
+ .gate-foot{font-size:.48rem;letter-spacing:.14em;text-align:center;padding:0 10px}
+}
+@media(max-height:700px){
+ .gate-arch{height:94svh;min-height:0;padding-top:24px}
+ .gate-doorway{height:clamp(250px,42vh,350px);margin-top:12px}
+ .gate-foot{margin-top:8px}
+}
+
 </style>
 </head>
 <body>
-<div id="opening"><div class="envelope">
- <div class="eyebrow">A wedding invitation</div>
- <svg class="ornament" viewBox="0 0 260 74" fill="none" aria-hidden="true"><path d="M130 70C104 49 73 44 49 19M130 70C156 49 187 44 211 19M130 70V13M130 42C110 14 91 19 94 31C98 43 116 42 130 42ZM130 42C150 14 169 19 166 31C162 43 144 42 130 42ZM76 43C53 32 38 38 45 48C52 57 67 51 76 43ZM184 43C207 32 222 38 215 48C208 57 193 51 184 43Z" stroke="currentColor" stroke-width="1.2"/><path d="M130 70C118 57 112 49 109 38M130 70C142 57 148 49 151 38" stroke="currentColor"/></svg>
- <p class="intro-names">Aniket Rajaram Gogar<br><span style="font-family:'Great Vibes';font-size:1.7rem;color:var(--gold)">and</span><br>Avina Ashok Tivlekar</p>
- <div class="seal">A <span style="color:var(--gold)">&</span> A</div>
- <button class="button primary" id="openInvite">Open Invitation</button>
-</div></div>
+<div id="opening" aria-label="Wedding invitation entrance">
+ <div class="gate-sky"></div><div class="gate-halo"></div>
+ <div class="gate-arch">
+  <div class="arch-crown"><span>✦</span><i></i><span>❧</span><i></i><span>✦</span></div>
+  <div class="arch-title">THE WEDDING OF</div>
+  <div class="gate-names">Aniket <span>&amp;</span> Avina</div>
+  <div class="gate-date">03 · DECEMBER · 2026</div>
+  <div class="gate-doorway">
+   <div class="gate-door gate-left">
+    <svg viewBox="0 0 180 440" preserveAspectRatio="none" aria-hidden="true">
+     <defs><linearGradient id="goldL" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0bd"/><stop offset=".28" stop-color="#a97935"/><stop offset=".55" stop-color="#f5d990"/><stop offset="1" stop-color="#765126"/></linearGradient><linearGradient id="woodL" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#182f27"/><stop offset=".5" stop-color="#355448"/><stop offset="1" stop-color="#142a22"/></linearGradient></defs>
+     <path d="M8 440V92Q8 18 90 8Q172 18 172 92V440Z" fill="url(#woodL)" stroke="url(#goldL)" stroke-width="4"/>
+     <path d="M20 440V94Q20 31 90 22Q160 31 160 94V440" fill="none" stroke="url(#goldL)" stroke-width="1.5"/>
+     <path d="M35 440V101Q35 49 90 39Q145 49 145 101V440M48 440V104Q48 62 90 53Q132 62 132 104V440" fill="none" stroke="#c8a35d" stroke-width="1"/>
+     <g fill="none" stroke="url(#goldL)" stroke-width="1.8"><path d="M90 70C35 105 37 155 90 184C143 155 145 105 90 70Z"/><path d="M90 80V190M51 111L129 162M129 111L51 162"/><path d="M90 190C39 224 40 267 90 294C140 267 141 224 90 190Z"/><path d="M90 200V300M53 229L127 273M127 229L53 273"/><path d="M90 302C43 330 45 371 90 397C135 371 137 330 90 302Z"/><path d="M90 310V405M57 339L123 379M123 339L57 379"/></g>
+     <g fill="#e4c47b"><circle cx="90" cy="184" r="4"/><circle cx="90" cy="294" r="4"/><circle cx="90" cy="397" r="4"/></g>
+     <path d="M24 432V104Q24 44 90 34" fill="none" stroke="#f7df9e" stroke-width="1" opacity=".7"/>
+    </svg>
+   </div>
+   <div class="gate-door gate-right">
+    <svg viewBox="0 0 180 440" preserveAspectRatio="none" aria-hidden="true">
+     <defs><linearGradient id="goldR" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0bd"/><stop offset=".28" stop-color="#a97935"/><stop offset=".55" stop-color="#f5d990"/><stop offset="1" stop-color="#765126"/></linearGradient><linearGradient id="woodR" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#142a22"/><stop offset=".5" stop-color="#355448"/><stop offset="1" stop-color="#182f27"/></linearGradient></defs>
+     <path d="M8 440V92Q8 18 90 8Q172 18 172 92V440Z" fill="url(#woodR)" stroke="url(#goldR)" stroke-width="4"/>
+     <path d="M20 440V94Q20 31 90 22Q160 31 160 94V440" fill="none" stroke="url(#goldR)" stroke-width="1.5"/>
+     <path d="M35 440V101Q35 49 90 39Q145 49 145 101V440M48 440V104Q48 62 90 53Q132 62 132 104V440" fill="none" stroke="#c8a35d" stroke-width="1"/>
+     <g fill="none" stroke="url(#goldR)" stroke-width="1.8"><path d="M90 70C35 105 37 155 90 184C143 155 145 105 90 70Z"/><path d="M90 80V190M51 111L129 162M129 111L51 162"/><path d="M90 190C39 224 40 267 90 294C140 267 141 224 90 190Z"/><path d="M90 200V300M53 229L127 273M127 229L53 273"/><path d="M90 302C43 330 45 371 90 397C135 371 137 330 90 302Z"/><path d="M90 310V405M57 339L123 379M123 339L57 379"/></g>
+     <g fill="#e4c47b"><circle cx="90" cy="184" r="4"/><circle cx="90" cy="294" r="4"/><circle cx="90" cy="397" r="4"/></g>
+     <path d="M156 432V104Q156 44 90 34" fill="none" stroke="#f7df9e" stroke-width="1" opacity=".7"/>
+    </svg>
+   </div>
+   <div class="gate-center"><div class="gate-medallion">A <span>&amp;</span> A</div><p>Two hearts. One forever.</p><button class="button primary" id="openInvite">Enter the celebration <span>↗</span></button><div class="gate-hint">TAP TO OPEN THE GATES</div></div>
+  </div>
+  <div class="gate-foot">WITH THE BLESSINGS OF OUR FAMILIES</div>
+ </div>
+</div>
 <section class="hero" id="home">
  <svg class="floral tl" viewBox="0 0 200 220" fill="none" aria-hidden="true"><g stroke="#78866e" stroke-width="1.2"><path d="M6 208C39 169 42 111 85 69C112 43 145 28 188 12"/><path d="M49 158C16 151 12 128 28 119C44 111 57 132 49 158ZM70 116C40 105 43 83 59 78C77 75 84 97 70 116ZM100 75C76 56 87 37 103 39C121 43 119 63 100 75ZM126 51C116 26 133 13 147 23C159 35 146 49 126 51Z"/><path d="M43 171C65 169 74 183 65 194C55 204 41 190 43 171ZM87 99C109 98 118 112 107 123C96 134 83 119 87 99Z"/></g></svg>
  <svg class="floral br" viewBox="0 0 200 220" fill="none" aria-hidden="true"><g stroke="#78866e" stroke-width="1.2"><path d="M6 208C39 169 42 111 85 69C112 43 145 28 188 12"/><path d="M49 158C16 151 12 128 28 119C44 111 57 132 49 158ZM70 116C40 105 43 83 59 78C77 75 84 97 70 116ZM100 75C76 56 87 37 103 39C121 43 119 63 100 75ZM126 51C116 26 133 13 147 23C159 35 146 49 126 51Z"/><path d="M43 171C65 169 74 183 65 194C55 204 41 190 43 171Z"/></g></svg>
@@ -103,7 +191,7 @@ footer{padding:30px 15px 50px;background:#e8ecdf;color:var(--sage);font-family:"
  <div class="paper reveal"><div class="eyebrow">The days are drawing near</div><h2>Until We Say “I Do”</h2><p class="copy">We look forward to sharing this beautiful day with you.</p><div class="countdown"><div class="unit"><strong id="days">00</strong><span>Days</span></div><div class="unit"><strong id="hours">00</strong><span>Hours</span></div><div class="unit"><strong id="minutes">00</strong><span>Minutes</span></div><div class="unit"><strong id="seconds">00</strong><span>Seconds</span></div></div><div class="rule"></div><h1 style="font-size:clamp(3.3rem,10vw,5.5rem)">Aniket <span style="font-size:.65em;color:var(--gold)">&</span> Avina</h1><p class="copy">With love and blessings, we can't wait to celebrate with you.</p><button class="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to the beginning ↑</button></div></section>
 <footer>Made with love for the beginning of forever.<br><span style="font:300 .62rem Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase">3 December 2026 · Raigad, Maharashtra</span></footer>
 <script>
-const opening=document.getElementById("opening");const openButton=document.getElementById("openInvite");function openInvitation(){opening.classList.add("closed");document.body.style.overflow="";setTimeout(()=>document.querySelector("#home").scrollIntoView({behavior:"smooth",block:"start"}),80)}openButton.addEventListener("click",openInvitation);document.body.style.overflow="hidden";
+const opening=document.getElementById("opening");const openButton=document.getElementById("openInvite");let entranceStarted=false;function openInvitation(){if(entranceStarted)return;entranceStarted=true;opening.classList.add("gates-open");openButton.disabled=true;openButton.innerHTML="Welcome to the celebration";setTimeout(()=>{opening.classList.add("closed");document.body.style.overflow="";setTimeout(()=>document.querySelector("#home").scrollIntoView({behavior:"smooth",block:"start"}),120)},1550)}openButton.addEventListener("click",openInvitation);document.body.style.overflow="hidden";
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('shown');io.unobserve(e.target)}}),{threshold:.13});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const target=new Date('2026-12-03T17:05:00+05:30').getTime();function tick(){let d=Math.max(0,target-Date.now());document.getElementById('days').textContent=String(Math.floor(d/86400000)).padStart(2,'0');document.getElementById('hours').textContent=String(Math.floor(d%86400000/3600000)).padStart(2,'0');document.getElementById('minutes').textContent=String(Math.floor(d%3600000/60000)).padStart(2,'0');document.getElementById('seconds').textContent=String(Math.floor(d%60000/1000)).padStart(2,'0')}tick();setInterval(tick,1000);
 </script>
