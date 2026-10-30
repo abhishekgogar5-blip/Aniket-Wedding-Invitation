@@ -275,6 +275,34 @@ section:not(.hero) .paper{border-radius:2px}
 .hero .eyebrow,.hero .small{max-width:100%}
 .hero .button{align-self:center}
 @media(max-width:640px){.ganesh-mark{width:112px;max-width:40vw}.ganesh-caption{font-size:.56rem;margin-bottom:9px}.ganesh-emblem{margin-bottom:10px}}
+
+/* Final invitation-cover art direction: ivory, antique gold and deep maroon */
+:root{--cream:#f8f1e7;--paper:#fffaf2;--gold:#bd9345;--ink:#49383a;--forest:#681d32;--sage:#9b654d;--sage2:#ead9c9;--rose:#d9b9a9}
+.hero{background:radial-gradient(ellipse at 50% 36%,#fffaf3 0%,#f8f0e5 72%,#eee0d1 100%)}
+.hero .paper{display:flex;flex-direction:column;align-items:center;width:min(760px,100%);padding:clamp(30px,5vw,54px) clamp(20px,5vw,54px);background:rgba(255,250,243,.94);border:1px solid #c49a55;box-shadow:0 14px 45px #5b243015}
+.hero .paper:before{inset:8px;border-color:#e0c28b}
+.hero .eyebrow,.hero .small{color:#966044}
+.hero h1{color:#681d32;font-size:clamp(3.7rem,9vw,6.2rem);margin:14px 0 5px}
+.hero .amp{color:#bd9345}
+.hero .copy{color:#57484a}
+.hero .date{color:#681d32}
+.hero .button{border-color:#a87535;color:#681d32}
+.hero .button.primary{background:#681d32;color:#fffaf2;border-color:#681d32}
+.hero .button:hover{background:#8a3147;color:#fff}
+.ganesh-emblem{display:flex;flex-direction:column;align-items:center;width:100%;margin:0 auto 8px}
+.ganesh-mark{display:block;width:clamp(118px,17vw,158px);height:auto;margin:0 auto 2px;filter:drop-shadow(0 2px 1px #8b5e2420)}
+.ganesh-caption{font:500 .72rem Montserrat,sans-serif;letter-spacing:.12em;color:#a77a2d;margin:0 0 13px}
+.hero .ornament{color:#8e263d;margin:2px auto 10px;height:66px}
+.hero .rule{background:#bd9345;margin:18px auto}
+.hero .scroll-note{color:#956044}
+@media(max-width:640px){
+ .hero .paper{padding:30px 18px 36px}
+ .ganesh-mark{width:122px}
+ .ganesh-caption{font-size:.64rem;margin-bottom:10px}
+ .hero h1{font-size:clamp(3.5rem,15vw,4.8rem);margin:12px 0 3px}
+ .hero .button{width:100%;max-width:310px;margin:8px auto 0}
+ .hero .ornament{height:52px}
+}
 </style>
 </head>
 <body>
@@ -333,37 +361,40 @@ section:not(.hero) .paper{border-radius:2px}
  <svg class="floral br" viewBox="0 0 200 220" fill="none" aria-hidden="true"><g stroke="#78866e" stroke-width="1.2"><path d="M6 208C39 169 42 111 85 69C112 43 145 28 188 12"/><path d="M49 158C16 151 12 128 28 119C44 111 57 132 49 158ZM70 116C40 105 43 83 59 78C77 75 84 97 70 116ZM100 75C76 56 87 37 103 39C121 43 119 63 100 75ZM126 51C116 26 133 13 147 23C159 35 146 49 126 51Z"/><path d="M43 171C65 169 74 183 65 194C55 204 41 190 43 171Z"/></g></svg>
  <div class="paper reveal">
  <div class="ganesh-emblem" aria-label="Lord Ganesha">
-  <svg class="ganesh-mark" viewBox="0 0 160 160" role="img" aria-labelledby="ganeshTitle">
-   <title id="ganeshTitle">Auspicious gold illustration of Lord Ganesha</title>
-   <defs><linearGradient id="ganeshGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9d29a"/><stop offset=".48" stop-color="#a97835"/><stop offset="1" stop-color="#d9b66d"/></linearGradient></defs>
-   <g fill="none" stroke="url(#ganeshGold)" stroke-linecap="round" stroke-linejoin="round">
-    <!-- ornamental halo and crown -->
-    <path d="M80 8c-28 0-51 22-55 49M80 8c28 0 51 22 55 49" stroke-width="1.2" opacity=".55"/>
-    <path d="M57 35 63 17 80 7 97 17 103 35 93 31 80 24 67 31Z" stroke-width="2.5"/>
-    <path d="M69 30 80 15 91 30M80 8v-5" stroke-width="1.8"/>
-    <circle cx="80" cy="7" r="3" fill="#bd9653" stroke="none"/>
-    <!-- ears -->
-    <path d="M57 49C40 34 20 39 15 57c-5 18 9 31 30 27 5-1 9-4 13-8M103 49c17-15 37-10 42 8 5 18-9 31-30 27-5-1-9-4-13-8" stroke-width="3"/>
-    <path d="M48 54c-9-7-19-1-19 9 0 8 7 13 17 11M112 54c9-7 19-1 19 9 0 8-7 13-17 11" stroke-width="1.5"/>
-    <!-- face and cheeks -->
-    <path d="M52 48c0-13 12-22 28-22s28 9 28 22v37c0 22-12 38-28 38S52 107 52 85Z" stroke-width="2.8"/>
-    <path d="M62 65c5-5 11-5 16 0M82 65c5-5 11-5 16 0" stroke-width="2.2"/>
-    <path d="M67 73c3 3 6 3 9 0M84 73c3 3 6 3 9 0" stroke-width="1.6"/>
-    <!-- tusks -->
-    <path d="M56 83c-7 8-7 16 0 19 6 2 10-3 11-9M104 83c7 8 7 16 0 19-6 2-10-3-11-9" stroke-width="2"/>
-    <!-- long curved trunk -->
-    <path d="M78 70c-1 15-1 24 7 31 7 7 19 7 22 17 3 12-8 22-22 20-11-1-18-10-15-19 2-6 8-9 14-8" stroke-width="4"/>
-    <path d="M80 78c-1 13 1 19 9 25 6 4 13 7 14 14" stroke-width="1.5"/>
+  <svg class="ganesh-mark" viewBox="0 0 240 270" role="img" aria-labelledby="ganeshTitle">
+   <title id="ganeshTitle">Traditional gold illustration of Lord Ganesha</title>
+   <defs>
+    <linearGradient id="ganeshGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1d77b"/><stop offset=".45" stop-color="#b88726"/><stop offset=".72" stop-color="#f3d45c"/><stop offset="1" stop-color="#8f5d18"/></linearGradient>
+   </defs>
+   <g stroke="url(#ganeshGold)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- crown -->
+    <path d="M83 50 91 25 120 8 149 25 157 50 139 42 120 31 101 42Z" fill="url(#ganeshGold)" stroke-width="3"/>
+    <path d="M101 40 120 17 139 40M120 8V2" fill="none" stroke-width="2.5"/>
+    <circle cx="120" cy="7" r="4" fill="#c69a3b" stroke="none"/>
+    <!-- broad elephant ears -->
+    <path d="M82 77C55 46 22 53 15 84 8 115 35 139 79 127L91 111M158 77C185 46 218 53 225 84 232 115 205 139 161 127L149 111" fill="#f4e5bd" fill-opacity=".28" stroke-width="4"/>
+    <path d="M75 83C52 65 34 76 37 97 40 113 57 119 78 111M165 83c23-18 41-7 38 14-3 16-20 22-41 14" fill="none" stroke-width="2"/>
+    <!-- head silhouette -->
+    <path d="M79 75C79 48 96 37 120 37s41 11 41 38v54c0 36-18 59-41 59s-41-23-41-59Z" fill="#f1dcae" fill-opacity=".25" stroke-width="4"/>
     <!-- tilak -->
-    <path d="M75 43c2-5 8-8 10-8s8 3 10 8M80 39v10" stroke-width="2"/>
-    <!-- ornamental necklace and base lotus -->
-    <path d="M57 111c8 9 15 13 23 13s15-4 23-13M62 119c5 11 11 17 18 17s13-6 18-17" stroke-width="1.8"/>
-    <path d="M80 137c-8-12-20-12-26-5 8 11 17 13 26 5Zm0 0c8-12 20-12 26-5-8 11-17 13-26 5Z" stroke-width="1.8"/>
-    <path d="M43 143c11 6 24 9 37 9s26-3 37-9" stroke-width="1.4"/>
+    <path d="M112 54c2-8 5-13 8-17 3 4 6 9 8 17M120 51v15" fill="none" stroke-width="3"/>
+    <!-- eyes -->
+    <path d="M94 99q10-10 20 0M126 99q10-10 20 0" fill="none" stroke-width="3.5"/>
+    <circle cx="104" cy="101" r="2.5" fill="#98691f" stroke="none"/><circle cx="136" cy="101" r="2.5" fill="#98691f" stroke="none"/>
+    <!-- tusks -->
+    <path d="M84 126q-13 13-3 24 9 8 17-5M156 126q13 13 3 24-9 8-17-5" fill="none" stroke-width="3"/>
+    <!-- trunk with unmistakable curl -->
+    <path d="M111 113c-2 28-1 49 14 61 11 9 29 7 36 20 8 16-3 34-21 36-16 2-28-9-24-22 3-9 12-13 21-10" fill="none" stroke-width="8"/>
+    <path d="M119 122c0 22 4 37 17 47 9 7 22 9 27 20" fill="none" stroke-width="2.2"/>
+    <!-- sacred necklace -->
+    <path d="M88 169q32 30 64 0M96 179q24 25 48 0" fill="none" stroke-width="2.5"/>
+    <!-- lotus base -->
+    <path d="M120 221c-10-21-32-25-43-11 12 18 28 23 43 11Zm0 0c10-21 32-25 43-11-12 18-28 23-43 11Zm-47 17q47 17 94 0M90 244q30 14 60 0" fill="none" stroke-width="2.5"/>
+    <!-- side ornaments -->
+    <path d="M57 151q-18 9-19 29m145-29q18 9 19 29" fill="none" stroke-width="2"/>
    </g>
-   <path d="M80 15 86 29 80 26 74 29Z" fill="#bd9653"/>
   </svg>
-  <div class="ganesh-caption">श्री गणेशाय नमः</div>
+  <div class="ganesh-caption">॥ श्री गणेशाय नमः ॥</div>
  </div>
  <div class="eyebrow">Together with our families</div>
  <svg class="ornament" viewBox="0 0 260 74" fill="none"><path d="M10 55C61 55 76 19 130 37C184 19 199 55 250 55M130 37V9M130 37C109 13 91 20 97 31C104 41 119 39 130 37ZM130 37C151 13 169 20 163 31C156 41 141 39 130 37ZM47 48C35 28 20 34 25 44C29 53 40 53 47 48ZM213 48C225 28 240 34 235 44C231 53 220 53 213 48Z" stroke="currentColor" stroke-width="1.2"/></svg>
