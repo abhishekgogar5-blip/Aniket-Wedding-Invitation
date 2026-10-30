@@ -181,6 +181,63 @@ footer:before{content:"✧  ❧  ✧";display:block;font:1.5rem "Cormorant Garam
  .unit{min-width:62px;padding:12px 8px 10px}
 }
 
+
+
+
+/* Royal burgundy & heirloom-gold art direction */
+:root{--cream:#f7efe5;--paper:#fffaf2;--sage:#8a2337;--sage2:#ead5d5;--forest:#5b1729;--gold:#bd9653;--ink:#39252a;--rose:#d8a9a0;--midnight:#32101d;--deep:#571a2c;--champagne:#f0dba8;--antique:#a87937}
+body{background:#32101d;color:#39252a}
+body:after{border-color:#c9a66b}
+.hero{background:radial-gradient(ellipse at 50% 42%,#fffaf1 0%,#f4e9dc 58%,#e6d0c8 100%)}
+.hero .paper{background:linear-gradient(145deg,#fffdf8f7,#f6eaddf4 58%,#fff9f0f7);border-color:#bd9653}
+h1,h2,h3{color:#5b1729}
+.amp{color:#bd9653}
+.eyebrow,.small{color:#8a5a3e}
+.rule{background:linear-gradient(90deg,transparent,#a87937,#ead5a3,#a87937,transparent)}
+section:not(.hero):before{background:radial-gradient(ellipse at 14% 18%,#e4bd7a25,transparent 32%),radial-gradient(ellipse at 86% 82%,#8e3a4a30,transparent 35%),linear-gradient(135deg,#421525 0%,#642337 42%,#2c101b 100%)}
+section:not(.hero):after{color:#f0dba809}
+.paper{background:linear-gradient(145deg,#fffaf2f7 0%,#f2e5d5f5 52%,#fff8edfa 100%);border-color:#c7a264;box-shadow:0 25px 80px #16070c88,inset 0 0 0 5px #fff9,inset 0 0 0 6px #c5a76a66}
+.paper:before{border-color:#c6a56b99}
+section:not(.hero) .eyebrow,section:not(.hero) .small{color:#956b3f}
+section:not(.hero) h2{color:#5b1729}
+.family-card{background:linear-gradient(145deg,#fff8ed,#edddce);border-color:#c4a06a}
+.family-card h3{color:#5b1729}
+.family-card:before{color:#a879371c}
+.event{background:linear-gradient(155deg,#fffaf1 0%,#f1e3d2 55%,#ead9d1 100%);border-color:#c9a66b;box-shadow:0 18px 38px #210b1538,inset 0 0 0 5px #fff9,inset 0 0 0 6px #c4a46466}
+.event:before{background:radial-gradient(ellipse at 50% 0%,#e2c27c80,transparent 58%)}
+.event .symbol{border-color:#c7a45d;background:linear-gradient(145deg,#fff8e8,#e8d3ad);color:#8b263b}
+.event .day,.event .eyebrow{color:#956b3f}
+.event h3{color:#5b1729}
+.event .date{color:#5b1729}
+.event .button,.button.primary{background:#641d32;color:#fff4df;border-color:#c6a064}
+.event .button:hover,.button.primary:hover{background:#a87937;color:#fffaf0}
+.button{border-color:#a87937;color:#641d32}
+.button:hover{background:#641d32;color:#fff4df}
+.countdown .unit{border-color:#c5a76b;background:linear-gradient(145deg,#fffaf1,#eadcc9)}
+.unit strong{color:#5b1729}.unit span{color:#956b3f}
+#countdownSection .paper{background:linear-gradient(145deg,#fffaf2f8,#eee0d0f8)}
+#countdownSection h1{color:#5b1729}
+footer{background:linear-gradient(135deg,#2a0d18,#5b1b30);color:#e8cf91;border-color:#bd9653}
+footer:before{color:#e4c27e}
+.floral{filter:sepia(.45) saturate(1.15)}
+/* Rich, restrained ornamental backdrop */
+section:not(.hero) .paper:after{background:linear-gradient(90deg,transparent,#bd9653,transparent)}
+section:not(.hero) .paper{border-radius:2px}
+.event{border-radius:2px}
+.gate-arch:before{border-color:#c69d59;box-shadow:inset 0 0 0 7px #35101f,inset 0 0 0 9px #d6b56d66,0 0 60px #0009}
+.gate-arch:after{border-color:#d6b56d88}
+.gate-arch{color:#f5e6bc}
+#opening{background:#210b14}
+#opening:before{background:radial-gradient(ellipse at 50% 35%,#713044 0%,#421526 42%,#1d0912 82%)}
+#opening:after{border-color:#d5b56f;outline-color:#9e793f}
+.gate-halo{border-color:#d8b96f44;box-shadow:0 0 0 20px #d8b96f0b,0 0 0 50px #d8b96f08,0 0 100px #e2bf7025}
+.gate-names{color:#fff0d0}
+.gate-names span{color:#e4c57c}
+.gate-center .button.primary{background:linear-gradient(135deg,#efd89d,#b58b49);color:#3d1423;border-color:#e1c078}
+.gate-medallion{background:linear-gradient(145deg,#e7cd8b,#a87937);color:#4a1728;box-shadow:0 0 0 5px #421526cc,0 0 0 6px #d9b86c}
+.gate-foot,.gate-hint,.gate-date{color:#e8d29f}
+@media(max-width:640px){section:not(.hero):before{background:radial-gradient(ellipse at 15% 12%,#d9b66b20,transparent 30%),radial-gradient(ellipse at 90% 90%,#a64b6025,transparent 32%),linear-gradient(145deg,#421525,#2c101b)}}
+
 </style>
 </head>
 <body>
@@ -194,7 +251,7 @@ footer:before{content:"✧  ❧  ✧";display:block;font:1.5rem "Cormorant Garam
   <div class="gate-doorway">
    <div class="gate-door gate-left">
     <svg viewBox="0 0 180 440" preserveAspectRatio="none" aria-hidden="true">
-     <defs><linearGradient id="goldL" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0bd"/><stop offset=".28" stop-color="#a97935"/><stop offset=".55" stop-color="#f5d990"/><stop offset="1" stop-color="#765126"/></linearGradient><linearGradient id="woodL" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#182f27"/><stop offset=".5" stop-color="#355448"/><stop offset="1" stop-color="#142a22"/></linearGradient></defs>
+     <defs><linearGradient id="goldL" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0c5"/><stop offset=".28" stop-color="#a97935"/><stop offset=".55" stop-color="#f5d990"/><stop offset="1" stop-color="#81552e"/></linearGradient><linearGradient id="woodL" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#391222"/><stop offset=".5" stop-color="#783047"/><stop offset="1" stop-color="#4b192d"/></linearGradient></defs>
      <path d="M8 440V92Q8 18 90 8Q172 18 172 92V440Z" fill="url(#woodL)" stroke="url(#goldL)" stroke-width="4"/>
      <path d="M20 440V94Q20 31 90 22Q160 31 160 94V440" fill="none" stroke="url(#goldL)" stroke-width="1.5"/>
      <path d="M35 440V101Q35 49 90 39Q145 49 145 101V440M48 440V104Q48 62 90 53Q132 62 132 104V440" fill="none" stroke="#c8a35d" stroke-width="1"/>
@@ -205,7 +262,7 @@ footer:before{content:"✧  ❧  ✧";display:block;font:1.5rem "Cormorant Garam
    </div>
    <div class="gate-door gate-right">
     <svg viewBox="0 0 180 440" preserveAspectRatio="none" aria-hidden="true">
-     <defs><linearGradient id="goldR" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0bd"/><stop offset=".28" stop-color="#a97935"/><stop offset=".55" stop-color="#f5d990"/><stop offset="1" stop-color="#765126"/></linearGradient><linearGradient id="woodR" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#142a22"/><stop offset=".5" stop-color="#355448"/><stop offset="1" stop-color="#182f27"/></linearGradient></defs>
+     <defs><linearGradient id="goldR" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0c5"/><stop offset=".28" stop-color="#a97935"/><stop offset=".55" stop-color="#f5d990"/><stop offset="1" stop-color="#81552e"/></linearGradient><linearGradient id="woodR" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4b192d"/><stop offset=".5" stop-color="#783047"/><stop offset="1" stop-color="#391222"/></linearGradient></defs>
      <path d="M8 440V92Q8 18 90 8Q172 18 172 92V440Z" fill="url(#woodR)" stroke="url(#goldR)" stroke-width="4"/>
      <path d="M20 440V94Q20 31 90 22Q160 31 160 94V440" fill="none" stroke="url(#goldR)" stroke-width="1.5"/>
      <path d="M35 440V101Q35 49 90 39Q145 49 145 101V440M48 440V104Q48 62 90 53Q132 62 132 104V440" fill="none" stroke="#c8a35d" stroke-width="1"/>
