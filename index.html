@@ -359,6 +359,17 @@ section:not(.hero) .paper{border-radius:2px}
  .gate-elephant-left{left:-3%}.gate-elephant-right{right:-3%}
 }
 
+
+/* Remove the pale rectangular image matte without changing its layout box */
+.ganesh-emblem img.ganesh-mark{
+  display:block;
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+  background:transparent!important;
+  mix-blend-mode:multiply!important;
+  filter:contrast(1.42) brightness(1.035)!important;
+}
 </style>
 </head>
 <body>
