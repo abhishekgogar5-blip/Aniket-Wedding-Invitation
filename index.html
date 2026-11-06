@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Join us to celebrate Aniket & Avina, 1–3 December 2026.">
 <meta name="twitter:image" content="https://aniket-wedding-invitation.vercel.app/og-wedding.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
 <style>
 :root{--cream:#f5f0e5;--paper:#fbf8f0;--sage:#77856b;--sage2:#dce2d2;--forest:#344b3d;--gold:#b99a68;--ink:#34382f;--rose:#d9b9a9}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-snap-type:y proximity}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Montserrat,sans-serif;font-weight:400;text-align:center}body:after{content:"";position:fixed;inset:9px;border:1px solid #b9bba4;pointer-events:none;z-index:20}
@@ -34,7 +34,6 @@ section{min-height:100svh;position:relative;display:flex;align-items:center;just
 footer{padding:30px 15px 50px;background:#e8ecdf;color:var(--sage);font-family:"Cormorant Garamond",serif;font-size:1.35rem}
 .reveal{opacity:0;transform:translateY(28px) scale(.985);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1)}.reveal.shown{opacity:1;transform:none}.hero .reveal{transition-delay:.15s}
 .scroll-note{position:absolute;bottom:22px;left:0;right:0;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);animation:bob 2s infinite}.scroll-note span{display:block;font-size:1.2rem;margin-top:4px}@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
-#opening{position:fixed;inset:0;z-index:30;background:radial-gradient(ellipse at 50% 35%,#fbf8f0 0%,#e9ecdf 58%,#dfe5d5 100%);display:flex;align-items:center;justify-content:center;padding:22px;transition:opacity 1s ease,visibility 1s ease}#opening.closed{opacity:0;visibility:hidden;pointer-events:none}.envelope{position:relative;width:min(460px,90vw);padding:50px 24px 42px;background:var(--paper);border:1px solid #c2c7b4;box-shadow:0 28px 90px #39463226;animation:float 4s ease-in-out infinite;overflow:hidden}.envelope:before{content:"";position:absolute;inset:8px;border:1px solid #d7d7c5;pointer-events:none}.envelope>*{position:relative;z-index:1}#openInvite{position:relative;z-index:2;min-height:46px;touch-action:manipulation}.seal{width:54px;height:54px;border-radius:50%;background:var(--forest);color:#f7f0df;display:grid;place-items:center;margin:20px auto;font:1.5rem "Cormorant Garamond",serif;box-shadow:0 0 0 4px var(--paper),0 0 0 5px var(--gold)}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @media(max-width:640px){
  html{scroll-snap-type:none}
  body{font-size:16px}
@@ -67,8 +66,6 @@ footer{padding:30px 15px 50px;background:#e8ecdf;color:var(--sage);font-family:"
  .unit strong{font-size:2.2rem}
  .unit span{font-size:.62rem}
  .scroll-note{bottom:12px}
- #opening{padding:18px}
- .envelope{width:min(430px,100%);padding:36px 18px 32px}
  footer{font-size:1.2rem;line-height:1.8;padding:26px 20px 38px}
 }
 @media(max-width:360px){
@@ -81,66 +78,6 @@ footer{padding:30px 15px 50px;background:#e8ecdf;color:var(--sage);font-family:"
 }
 
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
-
-/* Luxury ceremonial entrance */
-#opening{isolation:isolate;overflow:hidden;background:#101e18;perspective:1600px;transition:opacity 1.35s ease,visibility 1.35s ease}
-#opening:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%,#496653 0%,#203a2d 34%,#0b1712 78%);z-index:-3}
-#opening:after{content:"";position:absolute;inset:14px;border:1px solid #c8a35d;outline:1px solid #9e793f;outline-offset:5px;pointer-events:none;z-index:8;opacity:.8}
-.gate-sky{position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 50px,#e7c77808 51px 52px),radial-gradient(ellipse at center,#e4c57a17,transparent 55%);animation:gateGlow 6s ease-in-out infinite alternate;z-index:-1}
-.gate-halo{position:absolute;width:min(82vw,760px);aspect-ratio:1;border:1px solid #d8b96f36;border-radius:50%;box-shadow:0 0 0 20px #d8b96f08,0 0 0 50px #d8b96f06,0 0 100px #e2bf7020;animation:haloPulse 5s ease-in-out infinite}
-.gate-arch{position:relative;width:min(650px,94vw);height:min(790px,94svh);min-height:600px;display:flex;align-items:center;flex-direction:column;padding-top:clamp(28px,6vh,62px);color:#f5e6bc}
-.gate-arch:before{content:"";position:absolute;inset:0 0 3%;border:2px solid #b99553;border-radius:48% 48% 2px 2px/24% 24% 2px 2px;box-shadow:inset 0 0 0 7px #1a3025,inset 0 0 0 9px #d6b56d55,0 0 60px #0008;pointer-events:none}
-.gate-arch:after{content:"";position:absolute;inset:12px 12px 3.5%;border:1px solid #d6b56d77;border-radius:48% 48% 1px 1px/24% 24% 1px 1px;pointer-events:none}
-.arch-crown{display:flex;align-items:center;justify-content:center;gap:13px;color:#e4c57c;font-size:1.15rem;margin-bottom:13px;animation:riseIn 1.2s both}
-.arch-crown i{width:clamp(28px,8vw,70px);height:1px;background:linear-gradient(90deg,transparent,#d9b86f)}
-.arch-title{font:500 .66rem Montserrat,sans-serif;letter-spacing:.3em;color:#e4c57c;margin-bottom:8px;animation:riseIn 1.3s .1s both}
-.gate-names{font:500 clamp(2.4rem,7vw,4rem) "Cormorant Garamond",serif;letter-spacing:.02em;text-shadow:0 2px 18px #0006;animation:riseIn 1.3s .18s both}
-.gate-names span{font:italic 1em "Cormorant Garamond",serif;color:#e0bf73}
-.gate-date{font:500 .65rem Montserrat,sans-serif;letter-spacing:.22em;color:#d9c99f;margin-top:6px;animation:riseIn 1.3s .24s both}
-.gate-doorway{position:relative;width:min(92%,510px);height:clamp(310px,47vh,440px);margin-top:18px;perspective:1300px;filter:drop-shadow(0 18px 20px #0007)}
-.gate-door{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;transform-style:preserve-3d;transition:transform 1.8s cubic-bezier(.68,-.05,.2,1),filter 1.8s ease;backface-visibility:hidden}
-.gate-door svg{width:100%;height:100%;display:block}
-.gate-left{left:0;transform-origin:left center}
-.gate-right{right:0;transform-origin:right center}
-.gate-center{position:absolute;z-index:4;left:0;right:0;top:50%;transform:translateY(-35%);display:flex;flex-direction:column;align-items:center;text-shadow:0 2px 10px #08130e}
-.gate-medallion{display:grid;place-items:center;width:64px;height:64px;border:1px solid #e3c57b;border-radius:50%;background:linear-gradient(145deg,#d9b86c,#9c7335);color:#203b2d;box-shadow:0 0 0 5px #203b2dcc,0 0 0 6px #d9b86c;font:500 1.5rem "Cormorant Garamond",serif}
-.gate-medallion span{color:#fff2cb}
-.gate-center p{margin:15px 0 10px;font:italic 1.15rem "Cormorant Garamond",serif;color:#f8ebc9}
-.gate-center .button{margin-top:8px;border-color:#e1c078;box-shadow:0 5px 24px #0005;text-shadow:none}
-.gate-center .button.primary{background:linear-gradient(135deg,#e7ce8b,#b58c4a);color:#1b3025}
-.gate-center .button:hover{transform:translateY(-2px);background:#f4e2ad;color:#1b3025}
-.gate-hint{margin-top:13px;font:500 .55rem Montserrat,sans-serif;letter-spacing:.2em;color:#e6d4a7;animation:hintBlink 2.2s ease-in-out infinite}
-.gate-foot{margin-top:17px;font:500 .55rem Montserrat,sans-serif;letter-spacing:.22em;color:#d4b66e;animation:riseIn 1.4s .35s both}
-#opening.gates-open .gate-left{transform:rotateY(-108deg);filter:brightness(.7)}
-#opening.gates-open .gate-right{transform:rotateY(108deg);filter:brightness(.7)}
-#opening.gates-open .gate-center{opacity:0;transition:opacity .35s ease}
-#opening.gates-open .gate-arch{transform:scale(1.035);transition:transform 1.7s ease}
-#opening.closed{opacity:0;visibility:hidden;pointer-events:none}
-@keyframes gateGlow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.08)}}
-@keyframes haloPulse{0%,100%{transform:scale(.96);opacity:.55}50%{transform:scale(1.04);opacity:1}}
-@keyframes riseIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes hintBlink{0%,100%{opacity:.55}50%{opacity:1}}
-@media(max-width:640px){
- #opening:after{inset:8px;outline-offset:3px}
- .gate-arch{width:96vw;height:min(760px,92svh);min-height:560px;padding-top:clamp(35px,7vh,65px)}
- .gate-arch:before{inset:0 1px 2%}
- .gate-arch:after{inset:10px 10px 2.5%}
- .gate-names{font-size:clamp(2.35rem,10vw,3.2rem)}
- .arch-title{font-size:.58rem;letter-spacing:.23em}
- .gate-date{font-size:.58rem;letter-spacing:.16em}
- .gate-doorway{width:94%;height:clamp(310px,45vh,410px);margin-top:22px}
- .gate-center{transform:translateY(-25%)}
- .gate-medallion{width:54px;height:54px;font-size:1.3rem}
- .gate-center p{font-size:1.05rem}
- .gate-center .button{font-size:.62rem;padding:12px 13px;width:auto}
- .gate-foot{font-size:.48rem;letter-spacing:.14em;text-align:center;padding:0 10px}
-}
-@media(max-height:700px){
- .gate-arch{height:94svh;min-height:0;padding-top:24px}
- .gate-doorway{height:clamp(250px,42vh,350px);margin-top:12px}
- .gate-foot{margin-top:8px}
-}
-
 
 /* Transformative luxury styling for the inner invitation pages */
 :root{--midnight:#172c22;--deep:#243d2f;--champagne:#e7d19a;--antique:#a77c3e}
@@ -240,41 +177,9 @@ footer:before{color:#e4c27e}
 section:not(.hero) .paper:after{background:linear-gradient(90deg,transparent,#bd9653,transparent)}
 section:not(.hero) .paper{border-radius:2px}
 .event{border-radius:2px}
-.gate-arch:before{border-color:#c69d59;box-shadow:inset 0 0 0 7px #35101f,inset 0 0 0 9px #d6b56d66,0 0 60px #0009}
-.gate-arch:after{border-color:#d6b56d88}
-.gate-arch{color:#f5e6bc}
-#opening{background:#210b14}
-#opening:before{background:radial-gradient(ellipse at 50% 35%,#713044 0%,#421526 42%,#1d0912 82%)}
-#opening:after{border-color:#d5b56f;outline-color:#9e793f}
-.gate-halo{border-color:#d8b96f44;box-shadow:0 0 0 20px #d8b96f0b,0 0 0 50px #d8b96f08,0 0 100px #e2bf7025}
-.gate-names{color:#fff0d0}
-.gate-names span{color:#e4c57c}
-.gate-center .button.primary{background:linear-gradient(135deg,#efd89d,#b58b49);color:#3d1423;border-color:#e1c078}
-.gate-medallion{background:linear-gradient(145deg,#e7cd8b,#a87937);color:#4a1728;box-shadow:0 0 0 5px #421526cc,0 0 0 6px #d9b86c}
-.gate-foot,.gate-hint,.gate-date{color:#e8d29f}
 @media(max-width:640px){section:not(.hero):before{background:radial-gradient(ellipse at 15% 12%,#d9b66b20,transparent 30%),radial-gradient(ellipse at 90% 90%,#a64b6025,transparent 32%),linear-gradient(145deg,#421525,#2c101b)}}
 
 
-/* Nameless Koli-inspired royal family seal, kept inside the original round medallion */
-.gate-medallion{width:76px;height:76px;padding:8px;overflow:hidden;background:radial-gradient(circle at 35% 28%,#f8e6b2 0%,#d9b66c 48%,#a87937 100%);color:#6a2034;box-shadow:0 0 0 5px #421526cc,0 0 0 6px #d9b86c,0 5px 18px #16081088}
-.family-seal{display:block;width:100%;height:100%;filter:drop-shadow(0 1px 0 #fff1c8);color:#70253a}
-.gate-medallion span{display:none}
-@media(max-width:640px){.gate-medallion{width:64px;height:64px;padding:7px}}
-
-
-/* Auspicious Ganesh mark on the invitation cover */
-.ganesh-mark{width:142px;height:auto;max-width:48vw;margin:0 auto 12px;display:block;mix-blend-mode:multiply;filter:drop-shadow(0 2px 2px #7a4c2518)}
-
-@media(max-width:640px){.ganesh-mark{width:126px;margin-bottom:10px}}
-
-/* Refined original Ganesha emblem and restore the complete vertical hero card */
-.hero .paper{display:flex;flex-direction:column;align-items:center}
-.ganesh-emblem{width:100%;display:flex;flex-direction:column;align-items:center;margin:0 auto 12px}
-.ganesh-mark{display:block;width:clamp(104px,18vw,132px);height:auto;max-width:44vw;margin:0 auto 7px;mix-blend-mode:multiply;filter:none}
-.ganesh-caption{font-family:Inter,Montserrat,sans-serif;font-size:.61rem;letter-spacing:.19em;color:#956b3f;margin:0 0 10px}
-.hero .eyebrow,.hero .small{max-width:100%}
-.hero .button{align-self:center}
-@media(max-width:640px){.ganesh-mark{width:112px;max-width:40vw}.ganesh-caption{font-size:.56rem;margin-bottom:9px}.ganesh-emblem{margin-bottom:10px}}
 
 /* Final invitation-cover art direction: ivory, antique gold and deep maroon */
 :root{--cream:#f8f1e7;--paper:#fffaf2;--gold:#bd9345;--ink:#49383a;--forest:#681d32;--sage:#9b654d;--sage2:#ead9c9;--rose:#d9b9a9}
@@ -304,120 +209,208 @@ section:not(.hero) .paper{border-radius:2px}
  .hero .ornament{height:52px}
 }
 
-/* Soft palace gate with reference-matched illustrated royal elephants */
-#opening{background:#f4efe3;color:#5b1b30}
-#opening:before{background:radial-gradient(ellipse at 50% 48%,#fffdf5 0%,#f3eedf 62%,#e5ddc9 100%)}
-#opening:after{border-color:#bd9345;outline-color:#8d632d}
-.gate-sky{background:linear-gradient(#f8f5ebdd,#eee8d8dd),repeating-linear-gradient(90deg,transparent 0 54px,#bd934514 55px 56px);animation:none}
-.gate-halo{border-color:#bd934522;box-shadow:0 0 0 20px #bd934508,0 0 0 50px #bd934506,0 0 100px #bd934512}
-.gate-arch{z-index:2;color:#7b552b}
-.gate-arch:before{border-color:#b88b42;box-shadow:inset 0 0 0 7px #f7f0df,inset 0 0 0 9px #d6b56d88,0 0 40px #6b4b251a}
-.gate-arch:after{border-color:#c5a05c}
-.arch-crown,.arch-title,.gate-date,.gate-foot{color:#8a642e}
-.gate-names{color:#641d32;text-shadow:0 1px 0 #fff8}
-.gate-names span{color:#b88b42}
-.gate-doorway{z-index:3;width:min(76%,590px);margin-top:20px}
-.gate-door{filter:drop-shadow(0 7px 12px #3a17251f)}
-.gate-center{z-index:5;text-shadow:0 1px 5px #fff8}
-.gate-center p{color:#681d32;text-shadow:none}
-.gate-medallion{background:linear-gradient(145deg,#f4df9f,#a87935);color:#641d32;box-shadow:0 0 0 5px #f5efdf,0 0 0 6px #bd9345}
-.gate-center .button.primary{background:linear-gradient(135deg,#efd89d,#b58b49);color:#481629;border-color:#a87935}
-.gate-hint{color:#875c2c}
-.gate-foot{position:relative;z-index:4}
-.gate-foliage{position:absolute;z-index:1;top:1%;width:clamp(100px,19vw,190px);height:auto;opacity:.95;filter:drop-shadow(0 3px 2px #5c4b2a20);pointer-events:none}
-.gate-foliage svg{display:block;width:100%;height:auto}
-.gate-foliage-left{left:max(0px,calc(50% - 370px))}
-.gate-foliage-right{right:max(0px,calc(50% - 370px))}
-.gate-elephant{position:absolute;z-index:4;bottom:9%;width:clamp(108px,19vw,180px);height:auto;filter:drop-shadow(0 7px 5px #3020162a);pointer-events:none}
-.gate-elephant svg{display:block;width:100%;height:auto}
-.gate-elephant-left{left:max(0px,calc(50% - 375px))}
-.gate-elephant-right{right:max(0px,calc(50% - 375px));transform:scaleX(-1)}
+/* ===== Royal gateway entrance ===== */
+#gateway{position:fixed;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:max(18px,env(safe-area-inset-top)) 14px max(16px,env(safe-area-inset-bottom));color:#f6e6bd;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 48%,#7a2a42 0%,#4a1629 42%,#1d0811 100%);transition:opacity 1s ease .05s,visibility 1s ease .05s}
+#gateway:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(2px 2px at 12% 18%,#ffe9a8 50%,transparent 52%),radial-gradient(1.5px 1.5px at 84% 12%,#ffe9a8 50%,transparent 52%),radial-gradient(2px 2px at 24% 64%,#ffe9a8 50%,transparent 52%),radial-gradient(1.5px 1.5px at 90% 58%,#ffe9a8 50%,transparent 52%),radial-gradient(2px 2px at 8% 86%,#ffe9a8 50%,transparent 52%),radial-gradient(1.5px 1.5px at 72% 90%,#ffe9a8 50%,transparent 52%),radial-gradient(1.5px 1.5px at 40% 8%,#ffe9a8 50%,transparent 52%),radial-gradient(2px 2px at 60% 30%,#ffe9a8 50%,transparent 52%);animation:gwTwinkle 4.5s ease-in-out infinite alternate}
+#gateway:after{content:"";position:absolute;inset:12px;border:1px solid #c9a15f;outline:1px solid #8d632d;outline-offset:5px;pointer-events:none;opacity:.75}
+#gateway.closed{opacity:0;visibility:hidden;pointer-events:none}
+.gw-head{text-align:center;position:relative;z-index:2;transition:opacity .6s ease,transform .8s ease}
+.gw-eyebrow{font:600 .64rem Montserrat,Inter,sans-serif;letter-spacing:.34em;color:#e4c57c;margin:0 0 4px;padding-left:.34em}
+.gw-names{font:500 clamp(2.3rem,7.4vw,3.7rem)/1.05 "Cormorant Garamond",serif;color:#fff1d2;letter-spacing:.02em;text-shadow:0 2px 18px #0007;margin:0}
+.gw-names span{font-style:italic;color:#e8c777;padding:0 .08em}
+.gw-date{font:500 .62rem Montserrat,Inter,sans-serif;letter-spacing:.26em;color:#e9d6a6;margin:5px 0 0;padding-left:.26em}
+.gw-stage{position:relative;width:min(92vw,540px,calc((100svh - 262px)*.8));aspect-ratio:720/900;margin-top:clamp(6px,1.5svh,16px);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.gw-zoom{position:absolute;inset:0;transform-origin:50% 71%;transition:transform 1.9s cubic-bezier(.55,.05,.85,.4) 1.35s}
+.gw-scene,.gw-garland{position:absolute;inset:0;width:100%;height:100%;display:block;overflow:visible}
+.gw-scene{filter:drop-shadow(0 22px 28px #0009)}
+.gw-garland{z-index:4;pointer-events:none;filter:drop-shadow(0 3px 3px #0004)}
+.gw-doors{position:absolute;z-index:3;left:29.1667%;top:36.6667%;width:41.6667%;height:55.5556%;perspective:1500px;perspective-origin:50% 50%}
+.gw-door{position:absolute;top:0;bottom:0;width:49.7%;transition:transform 2.2s cubic-bezier(.62,.02,.22,1) .3s,filter 2.2s ease .3s;will-change:transform;filter:drop-shadow(0 0 6px #0006)}
+.gw-door svg{display:block;width:100%;height:100%}
+.gw-door-l{left:0;transform-origin:0 50%}
+.gw-door-r{right:0;transform-origin:100% 50%}
+.gw-door-r svg{transform:scaleX(-1)}
+.gw-seal{position:absolute;z-index:5;left:50%;top:71%;width:13.5%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 28%,#fbeab6 0%,#dcb865 48%,#a87937 100%);color:#6a2034;box-shadow:0 0 0 4px #4a1629,0 0 0 5.5px #e0c078,0 6px 18px #0009;transition:opacity .5s ease,transform .8s ease;animation:gwSeal 3.2s ease-in-out infinite}
+.gw-seal svg{display:block;width:82%;height:82%;filter:drop-shadow(0 1px 0 #fff1c8)}
+.gw-flame{transform-box:fill-box;transform-origin:50% 100%;animation:gwFlame 1.1s ease-in-out infinite alternate}
+.gw-flash{position:absolute;inset:0;z-index:6;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 71%,#fffdf3 0%,#fff6d8 45%,#fbf3df 100%);transition:opacity 1s ease 2.5s}
+.gw-foot{text-align:center;position:relative;z-index:2;margin-top:clamp(8px,1.8svh,16px);transition:opacity .5s ease}
+#openInvite{margin:0;min-width:236px;border:1px solid #e6c985;background:linear-gradient(135deg,#f6e3a6,#c9a04e 55%,#b58b49);color:#3d1423;font:700 .7rem Inter,Montserrat,sans-serif;letter-spacing:.18em;box-shadow:0 8px 26px #0007,inset 0 1px 0 #fff8}
+#openInvite:hover{background:linear-gradient(135deg,#fff0bf,#d8b563 55%,#c29a52);color:#2e0d1a;transform:translateY(-2px)}
+#openInvite:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.gw-hint{margin-top:9px;font:500 .54rem Montserrat,Inter,sans-serif;letter-spacing:.24em;color:#e6d4a7;animation:gwBlink 2.4s ease-in-out infinite}
+.gw-bless{margin-top:6px;font:500 .52rem Montserrat,Inter,sans-serif;letter-spacing:.22em;color:#c9a96a}
+/* opening sequence */
+#gateway.gates-open .gw-door-l{transform:rotateY(84deg);filter:brightness(.55) drop-shadow(0 0 0 #0000)}
+#gateway.gates-open .gw-door-r{transform:rotateY(-84deg);filter:brightness(.55) drop-shadow(0 0 0 #0000)}
+#gateway.gates-open .gw-seal{opacity:0;transform:translate(-50%,-50%) scale(.6);animation:none}
+#gateway.gates-open .gw-head,#gateway.gates-open .gw-foot{opacity:0}
+#gateway.gates-open .gw-head{transform:translateY(-14px)}
+#gateway.gates-open .gw-zoom{transform:scale(4.4)}
+#gateway.gates-open .gw-flash{opacity:1}
+@keyframes gwTwinkle{from{opacity:.35}to{opacity:1}}
+@keyframes gwFlame{from{transform:scale(1,.9) skewX(-4deg)}to{transform:scale(1.08,1.12) skewX(4deg)}}
+@keyframes gwBlink{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes gwSeal{0%,100%{box-shadow:0 0 0 4px #4a1629,0 0 0 5.5px #e0c078,0 6px 18px #0009,0 0 0 0 #f6dc9a00}50%{box-shadow:0 0 0 4px #4a1629,0 0 0 5.5px #e0c078,0 6px 18px #0009,0 0 22px 6px #f6dc9a66}}
 @media(max-width:640px){
- .gate-doorway{width:76%;height:clamp(280px,42vh,370px);margin-top:20px}
- .gate-elephant{width:clamp(92px,26vw,125px);bottom:12%}
- .gate-elephant-left{left:-3px}.gate-elephant-right{right:-3px}
- .gate-foliage{width:clamp(94px,25vw,125px);top:3%}
- .gate-foliage-left{left:-5px}.gate-foliage-right{right:-5px}
- .gate-arch:before{box-shadow:inset 0 0 0 5px #f7f0df,inset 0 0 0 7px #d6b56d88,0 0 25px #6b4b251a}
+ .gw-stage{width:min(94vw,calc((100svh - 252px)*.8))}
+ .gw-eyebrow{font-size:.58rem}
+ .gw-date{font-size:.56rem}
+ #openInvite{min-width:0;width:min(300px,86vw);padding:13px 14px;font-size:.66rem}
+ #gateway:after{inset:8px;outline-offset:3px}
 }
+@media(max-height:660px){.gw-bless{display:none}.gw-hint{margin-top:6px}.gw-stage{width:min(92vw,calc((100svh - 232px)*.8))}}
+@media(prefers-reduced-motion:reduce){#gateway:before,.gw-seal,.gw-flame,.gw-hint{animation:none!important}}
 
-
-/* Replace crude vector mascots with genuine Indian miniature artwork */
-.gate-foliage{position:absolute;z-index:1;top:-3%;width:clamp(120px,22vw,230px);height:260px;object-fit:cover;object-position:center 20%;opacity:.62;mix-blend-mode:multiply;filter:saturate(.75) contrast(1.05);pointer-events:none;border-radius:0 0 55% 55%;mask-image:linear-gradient(to bottom,#000 0%,#000 58%,transparent 100%)}
-.gate-foliage-left{left:-2%;transform:rotate(-16deg)}
-.gate-foliage-right{right:-2%;transform:scaleX(-1) rotate(-16deg)}
-.gate-elephant{position:absolute;z-index:4;bottom:2%;width:clamp(150px,24vw,245px);height:auto;aspect-ratio:1/1;object-fit:contain;mix-blend-mode:multiply;opacity:.98;filter:drop-shadow(0 12px 10px #4c321e30);pointer-events:none}
-.gate-elephant-left{left:1%}
-.gate-elephant-right{right:1%;transform:scaleX(-1)}
-.gate-arch{z-index:2}
-.gate-doorway{z-index:3}
-.gate-center{z-index:5}
-@media(max-width:640px){
- .gate-foliage{width:clamp(100px,28vw,140px);height:180px;top:0}
- .gate-foliage-left{left:-8%}.gate-foliage-right{right:-8%}
- .gate-elephant{width:clamp(112px,29vw,150px);bottom:3%}
- .gate-elephant-left{left:-3%}.gate-elephant-right{right:-3%}
-}
+/* ===== Refined Ganesha cover mark ===== */
+.ganesh-emblem{display:flex;flex-direction:column;align-items:center;width:100%;margin:0 auto 6px}
+.ganesh-mark{display:block;width:clamp(150px,22vw,188px);height:auto;margin:0 auto 4px;filter:drop-shadow(0 8px 14px #b8872a30)}
+.ganesh-caption{font:500 1rem "Tiro Devanagari Hindi","Noto Serif Devanagari",serif;letter-spacing:.06em;color:#a77a2d;margin:0 0 14px}
+@media(max-width:640px){.ganesh-mark{width:clamp(138px,42vw,168px)}.ganesh-caption{font-size:.95rem;margin-bottom:11px}}
 
 </style>
-</head>
 <body>
-<div id="opening" aria-label="Wedding invitation entrance">
- <div class="gate-sky"></div><div class="gate-halo"></div>
-
-
- <img class="gate-foliage gate-foliage-left" src="https://commons.wikimedia.org/wiki/Special:FilePath/Small_banana_plant.jpg" alt="" aria-hidden="true">
- <img class="gate-foliage gate-foliage-right" src="https://commons.wikimedia.org/wiki/Special:FilePath/Small_banana_plant.jpg" alt="" aria-hidden="true">
- <img class="gate-elephant gate-elephant-left" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/India%2C_Rajasthan%2C_Mewar_school_-_Caparisoned_Elephant_with_a_Mahout_-_2005.202_-_Cleveland_Museum_of_Art.jpg" alt="Traditional Rajasthani royal elephant with ceremonial caparison and mahout">
- <img class="gate-elephant gate-elephant-right" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/India%2C_Rajasthan%2C_Mewar_school_-_Caparisoned_Elephant_with_a_Mahout_-_2005.202_-_Cleveland_Museum_of_Art.jpg" alt="Traditional Rajasthani royal elephant with ceremonial caparison and mahout">
-
-
- <div class="gate-arch">
-  <div class="arch-crown"><span>✦</span><i></i><span>❧</span><i></i><span>✦</span></div>
-  <div class="arch-title">THE WEDDING OF</div>
-  <div class="gate-names">Aniket <span>&amp;</span> Avina</div>
-  <div class="gate-date">03 · DECEMBER · 2026</div>
-  <div class="gate-doorway">
-   <div class="gate-door gate-left">
-    <svg viewBox="0 0 180 440" preserveAspectRatio="none" aria-hidden="true">
-     <defs><linearGradient id="goldL" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0c5"/><stop offset=".28" stop-color="#a97935"/><stop offset=".55" stop-color="#f5d990"/><stop offset="1" stop-color="#81552e"/></linearGradient><linearGradient id="woodL" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#391222"/><stop offset=".5" stop-color="#783047"/><stop offset="1" stop-color="#4b192d"/></linearGradient></defs>
-     <path d="M8 440V92Q8 18 90 8Q172 18 172 92V440Z" fill="url(#woodL)" stroke="url(#goldL)" stroke-width="4"/>
-     <path d="M20 440V94Q20 31 90 22Q160 31 160 94V440" fill="none" stroke="url(#goldL)" stroke-width="1.5"/>
-     <path d="M35 440V101Q35 49 90 39Q145 49 145 101V440M48 440V104Q48 62 90 53Q132 62 132 104V440" fill="none" stroke="#c8a35d" stroke-width="1"/>
-     <g fill="none" stroke="url(#goldL)" stroke-width="1.8"><path d="M90 70C35 105 37 155 90 184C143 155 145 105 90 70Z"/><path d="M90 80V190M51 111L129 162M129 111L51 162"/><path d="M90 190C39 224 40 267 90 294C140 267 141 224 90 190Z"/><path d="M90 200V300M53 229L127 273M127 229L53 273"/><path d="M90 302C43 330 45 371 90 397C135 371 137 330 90 302Z"/><path d="M90 310V405M57 339L123 379M123 339L57 379"/></g>
-     <g fill="#e4c47b"><circle cx="90" cy="184" r="4"/><circle cx="90" cy="294" r="4"/><circle cx="90" cy="397" r="4"/></g>
-     <path d="M24 432V104Q24 44 90 34" fill="none" stroke="#f7df9e" stroke-width="1" opacity=".7"/>
-    </svg>
+<div id="gateway" role="dialog" aria-label="Wedding invitation entrance">
+ <header class="gw-head">
+  <p class="gw-eyebrow">THE WEDDING OF</p>
+  <h2 class="gw-names">Aniket <span>&amp;</span> Avina</h2>
+  <p class="gw-date">03 · DECEMBER · 2026</p>
+ </header>
+ <div class="gw-stage" id="gwStage">
+  <div class="gw-zoom">
+   <svg class="gw-scene" viewBox="0 0 720 900" aria-hidden="true" focusable="false">
+<defs>
+ <linearGradient id="gwStone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf1da"/><stop offset="1" stop-color="#ead7ad"/></linearGradient>
+ <linearGradient id="gwStoneD" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9bd86"/><stop offset=".5" stop-color="#f0dfb7"/><stop offset="1" stop-color="#d4b57a"/></linearGradient>
+ <linearGradient id="gwBand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e2c78f"/><stop offset=".5" stop-color="#f6e8c6"/><stop offset="1" stop-color="#dcc085"/></linearGradient>
+ <linearGradient id="gwGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe9a8"/><stop offset=".45" stop-color="#cf9b34"/><stop offset="1" stop-color="#8f5d18"/></linearGradient>
+ <radialGradient id="gwGlow" cx="360" cy="660" r="330" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fffbe8"/><stop offset=".28" stop-color="#ffe9a6"/><stop offset=".6" stop-color="#e5a93f"/><stop offset="1" stop-color="#7d2a3b"/></radialGradient>
+ <radialGradient id="gwFlameGlow"><stop offset="0" stop-color="#ffd978" stop-opacity=".8"/><stop offset="1" stop-color="#ffd978" stop-opacity="0"/></radialGradient>
+ <radialGradient id="gwAura" cx="360" cy="560" r="420" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f3c96a" stop-opacity=".30"/><stop offset="1" stop-color="#f3c96a" stop-opacity="0"/></radialGradient>
+ <pattern id="gwJaali" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M9 0L18 9L9 18L0 9Z" fill="none" stroke="#b98a38" stroke-width=".8"/><circle cx="9" cy="9" r="1.4" fill="#b98a38"/></pattern>
+ <clipPath id="gwOpen"><path d="M210 826V520C210 440 290 380 360 330C430 380 510 440 510 520V826Z"/></clipPath>
+ <clipPath id="gwSpandrel"><path fill-rule="evenodd" d="M142 248H578V816H142ZM182 826V520C182 430 290 360 360 290C430 360 538 430 538 520V826Z"/></clipPath>
+</defs>
+<ellipse cx="360" cy="560" rx="420" ry="420" fill="url(#gwAura)"/>
+<!-- steps -->
+<rect x="66" y="858" width="588" height="42" fill="url(#gwStoneD)" stroke="#b98a38" stroke-width="1.6"/>
+<rect x="88" y="838" width="544" height="22" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.6"/>
+<rect x="110" y="822" width="500" height="18" fill="url(#gwStoneD)" stroke="#b98a38" stroke-width="1.6"/>
+<!-- crowning chhatris -->
+<g stroke="#8f5d18" stroke-width="1.6" stroke-linejoin="round">
+ <rect x="292" y="190" width="136" height="12" fill="url(#gwStone)" stroke="#b98a38"/>
+ <g fill="url(#gwStone)" stroke="#b98a38"><rect x="298" y="132" width="9" height="58"/><rect x="323" y="132" width="9" height="58"/><rect x="388" y="132" width="9" height="58"/><rect x="413" y="132" width="9" height="58"/></g>
+ <path d="M307 190V160Q315 146 323 160V190M397 190V160Q405 146 413 160V190" fill="#7d1f38" stroke="#b98a38"/>
+ <path d="M296 134C284 104 330 92 346 64C353 52 358 42 360 28C362 42 367 52 374 64C390 92 436 104 424 134Z" fill="url(#gwGold)"/>
+ <path d="M360 34C344 70 316 96 306 132M360 34C376 70 404 96 414 132M360 34V132" fill="none" stroke="#fff0bb" stroke-width="1.2" opacity=".75"/>
+ <circle cx="360" cy="22" r="5" fill="url(#gwGold)"/><path d="M360 17V8" stroke="#b98a38" stroke-width="2"/><circle cx="360" cy="7" r="2.6" fill="#8a1f3c"/>
+ <g id="gwSideDome"><rect x="190" y="198" width="50" height="8" fill="url(#gwStone)" stroke="#b98a38"/>
+  <g fill="url(#gwStone)" stroke="#b98a38"><rect x="194" y="160" width="7" height="38"/><rect x="229" y="160" width="7" height="38"/></g>
+  <path d="M188 162C180 142 206 134 215 112C224 134 250 142 242 162Z" fill="url(#gwGold)"/>
+  <circle cx="215" cy="107" r="3.6" fill="url(#gwGold)"/><path d="M215 104V96" stroke="#b98a38" stroke-width="1.6"/></g>
+ <use href="#gwSideDome" transform="translate(720 0) scale(-1 1)"/>
+</g>
+<!-- parapet -->
+<g><path d="M130 208V198Q130 180 148 168Q166 180 166 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="148" cy="190" r="3.2" fill="#8a1f3c"/><path d="M174.2 208V198Q174.2 180 192.2 168Q210.2 180 210.2 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="192.2" cy="190" r="3.2" fill="#8a1f3c"/><path d="M218.39999999999998 208V198Q218.39999999999998 180 236.39999999999998 168Q254.39999999999998 180 254.39999999999998 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="236.39999999999998" cy="190" r="3.2" fill="#8a1f3c"/><path d="M262.59999999999997 208V198Q262.59999999999997 180 280.59999999999997 168Q298.59999999999997 180 298.59999999999997 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="280.59999999999997" cy="190" r="3.2" fill="#8a1f3c"/><path d="M306.79999999999995 208V198Q306.79999999999995 180 324.79999999999995 168Q342.79999999999995 180 342.79999999999995 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="324.79999999999995" cy="190" r="3.2" fill="#8a1f3c"/><path d="M350.99999999999994 208V198Q350.99999999999994 180 368.99999999999994 168Q386.99999999999994 180 386.99999999999994 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="368.99999999999994" cy="190" r="3.2" fill="#8a1f3c"/><path d="M395.19999999999993 208V198Q395.19999999999993 180 413.19999999999993 168Q431.19999999999993 180 431.19999999999993 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="413.19999999999993" cy="190" r="3.2" fill="#8a1f3c"/><path d="M439.3999999999999 208V198Q439.3999999999999 180 457.3999999999999 168Q475.3999999999999 180 475.3999999999999 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="457.3999999999999" cy="190" r="3.2" fill="#8a1f3c"/><path d="M483.5999999999999 208V198Q483.5999999999999 180 501.5999999999999 168Q519.5999999999999 180 519.5999999999999 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="501.5999999999999" cy="190" r="3.2" fill="#8a1f3c"/><path d="M527.8 208V198Q527.8 180 545.8 168Q563.8 180 563.8 198V208Z" fill="url(#gwStone)" stroke="#b98a38" stroke-width="1.4"/><circle cx="545.8" cy="190" r="3.2" fill="#8a1f3c"/></g>
+<rect x="124" y="206" width="472" height="32" fill="url(#gwStone)" stroke="#b98a38" stroke-width="2"/>
+<path d="M124 222H596" stroke="#b98a38" stroke-width=".9" stroke-dasharray="1 6" stroke-linecap="round"/>
+<!-- facade -->
+<rect x="130" y="238" width="460" height="590" fill="url(#gwStone)" stroke="#b98a38" stroke-width="2.6"/>
+<rect x="142" y="248" width="436" height="570" fill="none" stroke="#b98a38" stroke-width=".9"/>
+<rect x="142" y="248" width="436" height="570" fill="url(#gwJaali)" opacity=".55" clip-path="url(#gwSpandrel)"/>
+<!-- pillars -->
+<g>
+ <rect x="136" y="262" width="40" height="560" fill="url(#gwStoneD)" stroke="#b98a38" stroke-width="1.8"/>
+ <rect x="544" y="262" width="40" height="560" fill="url(#gwStoneD)" stroke="#b98a38" stroke-width="1.8"/>
+ <g stroke="#b98a38" stroke-width="1"><path d="M146 262V822M156 262V822M166 262V822M554 262V822M564 262V822M574 262V822" opacity=".55"/></g>
+ <g fill="url(#gwGold)" stroke="#8f5d18" stroke-width="1.4">
+  <rect x="130" y="256" width="52" height="14" rx="2"/><rect x="538" y="256" width="52" height="14" rx="2"/>
+  <rect x="130" y="760" width="52" height="14" rx="2"/><rect x="538" y="760" width="52" height="14" rx="2"/>
+  <rect x="130" y="806" width="52" height="18" rx="2"/><rect x="538" y="806" width="52" height="18" rx="2"/>
+ </g>
+ <g fill="#7d1f38" stroke="#fff0bb" stroke-width="1.2"><circle cx="156" cy="318" r="7"/><circle cx="564" cy="318" r="7"/><circle cx="156" cy="720" r="7"/><circle cx="564" cy="720" r="7"/></g>
+</g>
+<!-- arch surround -->
+<path d="M182 826V520C182 430 290 360 360 290C430 360 538 430 538 520V826Z" fill="url(#gwBand)" stroke="#b98a38" stroke-width="2.4"/>
+<path d="M196 826V520C196 436 296 372 360 310C424 372 524 436 524 520V826" fill="none" stroke="#b98a38" stroke-width="1"/>
+<path d="M210 826V520C210 440 290 380 360 330C430 380 510 440 510 520V826" fill="none" stroke="#fff7dc" stroke-width="5" stroke-dasharray="0 9" stroke-linecap="round" opacity=".95"/>
+<!-- tympanum sun -->
+<g transform="translate(360 262)">
+ <circle r="19" fill="#7d1f38" stroke="url(#gwGold)" stroke-width="3"/>
+ <g stroke="#fff0bb" stroke-width="1.6" stroke-linecap="round"><path d="M0 -7L0 -13" transform="rotate(0)"/><path d="M0 -7L0 -13" transform="rotate(30)"/><path d="M0 -7L0 -13" transform="rotate(60)"/><path d="M0 -7L0 -13" transform="rotate(90)"/><path d="M0 -7L0 -13" transform="rotate(120)"/><path d="M0 -7L0 -13" transform="rotate(150)"/><path d="M0 -7L0 -13" transform="rotate(180)"/><path d="M0 -7L0 -13" transform="rotate(210)"/><path d="M0 -7L0 -13" transform="rotate(240)"/><path d="M0 -7L0 -13" transform="rotate(270)"/><path d="M0 -7L0 -13" transform="rotate(300)"/><path d="M0 -7L0 -13" transform="rotate(330)"/></g>
+ <circle r="5" fill="#fff0bb"/>
+</g>
+<!-- glowing interior (revealed when doors open) -->
+<path d="M210 826V520C210 440 290 380 360 330C430 380 510 440 510 520V826Z" fill="url(#gwGlow)"/>
+<g clip-path="url(#gwOpen)">
+ <g class="gw-rays"><path d="M360 700L-252.9 555.3L-232.9 555.3Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L-220.9 467.7L-208.9 467.7Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L-184.2 385.3L-164.2 385.3Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L-127.8 309.8L-115.8 309.8Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L-68.9 242.9L-48.9 242.9Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L7.3 186.0L19.3 186.0Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L83.1 140.4L103.1 140.4Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L172.7 107.1L184.7 107.1Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L258.4 86.8L278.4 86.8Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L354.0 80.0L366.0 80.0Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L441.6 86.8L461.6 86.8Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L535.3 107.1L547.3 107.1Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L616.9 140.4L636.9 140.4Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L700.7 186.0L712.7 186.0Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L768.9 242.9L788.9 242.9Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L835.8 309.8L847.8 309.8Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L884.2 385.3L904.2 385.3Z" fill="#fff6d0" opacity="0.2"/><path d="M360 700L928.9 467.7L940.9 467.7Z" fill="#fff6d0" opacity="0.12"/><path d="M360 700L952.9 555.3L972.9 555.3Z" fill="#fff6d0" opacity="0.2"/></g>
+ <circle cx="360" cy="690" r="150" fill="none" stroke="#fff6d0" stroke-width="1.4" opacity=".5"/>
+ <circle cx="360" cy="690" r="110" fill="none" stroke="#fff6d0" stroke-width="1" stroke-dasharray="2 7" opacity=".7"/>
+ <ellipse cx="360" cy="812" rx="170" ry="26" fill="#fff6d0" opacity=".45"/>
+ <g transform="translate(360 790)" fill="#fff4cf" stroke="#c9972f" stroke-width="1.6"><g transform="rotate(-80)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g><g transform="rotate(-60)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g><g transform="rotate(-40)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g><g transform="rotate(-20)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g><g transform="rotate(0)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g><g transform="rotate(20)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g><g transform="rotate(40)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g><g transform="rotate(60)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g><g transform="rotate(80)"><path d="M0 0C-17 -16 -16 -40 0 -62 16 -40 17 -16 0 0Z"/></g></g>
+</g>
+<!-- diyas -->
+<g><g transform="translate(118 833)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(146 833)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(174 833)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(546 833)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(574 833)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(602 833)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(100 855)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(128 855)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(592 855)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g><g transform="translate(620 855)"><circle r="18" cy="-8" fill="url(#gwFlameGlow)"/><path d="M-10 0Q0 11 10 0Z" fill="#b8792a" stroke="#f4d98a" stroke-width="1"/><path class="gw-flame" d="M0 -2C-4.5 -8 -1.5 -13 0 -19C1.5 -13 4.5 -8 0 -2Z" fill="#ffd36a"/></g></g>
+</svg>
+   <div class="gw-doors">
+    <div class="gw-door gw-door-l"><svg viewBox="0 0 150 500" aria-hidden="true" focusable="false">
+ <defs>
+  <linearGradient id="gwWoodL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3f1122"/><stop offset=".55" stop-color="#7b2a43"/><stop offset="1" stop-color="#521a2e"/></linearGradient>
+  <linearGradient id="gwGoldDL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0c5"/><stop offset=".3" stop-color="#b98a38"/><stop offset=".6" stop-color="#f5da8e"/><stop offset="1" stop-color="#8a5a1c"/></linearGradient>
+  <pattern id="gwLatL" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M6 0L12 6L6 12L0 6Z" fill="none" stroke="#e2bd6a" stroke-width=".8"/></pattern>
+  <linearGradient id="gwShineL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".25"/><stop offset=".5" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient>
+ </defs>
+ <path d="M0 500V190C0 110 80 50 150 0V500Z" fill="url(#gwWoodL)" stroke="url(#gwGoldDL)" stroke-width="4"/>
+ <path d="M10 500V192C10 122 76 72 140 22V500" fill="none" stroke="#e2bd6a" stroke-width="1"/>
+ <g fill="#2f0b19" stroke="url(#gwGoldDL)" stroke-width="1.6">
+  <path d="M24 262V206C24 152 70 114 138 66V262Z"/>
+  <path d="M24 402V296Q81 272 138 296V402Z"/>
+  <path d="M24 486V418H138V486Z"/>
+ </g>
+ <g fill="url(#gwLatL)" opacity=".8"><path d="M24 262V206C24 152 70 114 138 66V262Z"/><path d="M24 402V296Q81 272 138 296V402Z"/><path d="M24 486V418H138V486Z"/></g>
+ <g fill="url(#gwGoldDL)"><rect x="10" y="266" width="130" height="7"/><rect x="10" y="406" width="130" height="7"/></g>
+ <g transform="translate(96 168)" fill="#8a1f3c" stroke="url(#gwGoldDL)" stroke-width="1.6">
+  <circle r="17"/>
+  <g fill="none"><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(0)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(45)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(90)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(135)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(180)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(225)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(270)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(315)"/></g>
+  <circle r="4" fill="#f5da8e"/>
+ </g>
+ <g fill="url(#gwGoldDL)"><circle cx="17" cy="208" r="2.6"/><circle cx="133" cy="208" r="2.6"/><circle cx="17" cy="232" r="2.6"/><circle cx="133" cy="232" r="2.6"/><circle cx="17" cy="256" r="2.6"/><circle cx="133" cy="256" r="2.6"/><circle cx="17" cy="280" r="2.6"/><circle cx="133" cy="280" r="2.6"/><circle cx="17" cy="304" r="2.6"/><circle cx="133" cy="304" r="2.6"/><circle cx="17" cy="328" r="2.6"/><circle cx="133" cy="328" r="2.6"/><circle cx="17" cy="352" r="2.6"/><circle cx="133" cy="352" r="2.6"/><circle cx="17" cy="376" r="2.6"/><circle cx="133" cy="376" r="2.6"/><circle cx="17" cy="400" r="2.6"/><circle cx="133" cy="400" r="2.6"/><circle cx="17" cy="424" r="2.6"/><circle cx="133" cy="424" r="2.6"/><circle cx="17" cy="448" r="2.6"/><circle cx="133" cy="448" r="2.6"/><circle cx="17" cy="472" r="2.6"/><circle cx="133" cy="472" r="2.6"/></g>
+ <path d="M0 500V190C0 110 80 50 150 0V500Z" fill="url(#gwShineL)"/>
+</svg></div>
+    <div class="gw-door gw-door-r"><svg viewBox="0 0 150 500" aria-hidden="true" focusable="false">
+ <defs>
+  <linearGradient id="gwWoodR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3f1122"/><stop offset=".55" stop-color="#7b2a43"/><stop offset="1" stop-color="#521a2e"/></linearGradient>
+  <linearGradient id="gwGoldDR" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0c5"/><stop offset=".3" stop-color="#b98a38"/><stop offset=".6" stop-color="#f5da8e"/><stop offset="1" stop-color="#8a5a1c"/></linearGradient>
+  <pattern id="gwLatR" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M6 0L12 6L6 12L0 6Z" fill="none" stroke="#e2bd6a" stroke-width=".8"/></pattern>
+  <linearGradient id="gwShineR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".25"/><stop offset=".5" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient>
+ </defs>
+ <path d="M0 500V190C0 110 80 50 150 0V500Z" fill="url(#gwWoodR)" stroke="url(#gwGoldDR)" stroke-width="4"/>
+ <path d="M10 500V192C10 122 76 72 140 22V500" fill="none" stroke="#e2bd6a" stroke-width="1"/>
+ <g fill="#2f0b19" stroke="url(#gwGoldDR)" stroke-width="1.6">
+  <path d="M24 262V206C24 152 70 114 138 66V262Z"/>
+  <path d="M24 402V296Q81 272 138 296V402Z"/>
+  <path d="M24 486V418H138V486Z"/>
+ </g>
+ <g fill="url(#gwLatR)" opacity=".8"><path d="M24 262V206C24 152 70 114 138 66V262Z"/><path d="M24 402V296Q81 272 138 296V402Z"/><path d="M24 486V418H138V486Z"/></g>
+ <g fill="url(#gwGoldDR)"><rect x="10" y="266" width="130" height="7"/><rect x="10" y="406" width="130" height="7"/></g>
+ <g transform="translate(96 168)" fill="#8a1f3c" stroke="url(#gwGoldDR)" stroke-width="1.6">
+  <circle r="17"/>
+  <g fill="none"><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(0)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(45)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(90)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(135)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(180)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(225)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(270)"/><path d="M0 -6C-5 -10 -4 -15 0 -18 4 -15 5 -10 0 -6Z" transform="rotate(315)"/></g>
+  <circle r="4" fill="#f5da8e"/>
+ </g>
+ <g fill="url(#gwGoldDR)"><circle cx="17" cy="208" r="2.6"/><circle cx="133" cy="208" r="2.6"/><circle cx="17" cy="232" r="2.6"/><circle cx="133" cy="232" r="2.6"/><circle cx="17" cy="256" r="2.6"/><circle cx="133" cy="256" r="2.6"/><circle cx="17" cy="280" r="2.6"/><circle cx="133" cy="280" r="2.6"/><circle cx="17" cy="304" r="2.6"/><circle cx="133" cy="304" r="2.6"/><circle cx="17" cy="328" r="2.6"/><circle cx="133" cy="328" r="2.6"/><circle cx="17" cy="352" r="2.6"/><circle cx="133" cy="352" r="2.6"/><circle cx="17" cy="376" r="2.6"/><circle cx="133" cy="376" r="2.6"/><circle cx="17" cy="400" r="2.6"/><circle cx="133" cy="400" r="2.6"/><circle cx="17" cy="424" r="2.6"/><circle cx="133" cy="424" r="2.6"/><circle cx="17" cy="448" r="2.6"/><circle cx="133" cy="448" r="2.6"/><circle cx="17" cy="472" r="2.6"/><circle cx="133" cy="472" r="2.6"/></g>
+ <path d="M0 500V190C0 110 80 50 150 0V500Z" fill="url(#gwShineR)"/>
+</svg></div>
    </div>
-   <div class="gate-door gate-right">
-    <svg viewBox="0 0 180 440" preserveAspectRatio="none" aria-hidden="true">
-     <defs><linearGradient id="goldR" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0c5"/><stop offset=".28" stop-color="#a97935"/><stop offset=".55" stop-color="#f5d990"/><stop offset="1" stop-color="#81552e"/></linearGradient><linearGradient id="woodR" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4b192d"/><stop offset=".5" stop-color="#783047"/><stop offset="1" stop-color="#391222"/></linearGradient></defs>
-     <path d="M8 440V92Q8 18 90 8Q172 18 172 92V440Z" fill="url(#woodR)" stroke="url(#goldR)" stroke-width="4"/>
-     <path d="M20 440V94Q20 31 90 22Q160 31 160 94V440" fill="none" stroke="url(#goldR)" stroke-width="1.5"/>
-     <path d="M35 440V101Q35 49 90 39Q145 49 145 101V440M48 440V104Q48 62 90 53Q132 62 132 104V440" fill="none" stroke="#c8a35d" stroke-width="1"/>
-     <g fill="none" stroke="url(#goldR)" stroke-width="1.8"><path d="M90 70C35 105 37 155 90 184C143 155 145 105 90 70Z"/><path d="M90 80V190M51 111L129 162M129 111L51 162"/><path d="M90 190C39 224 40 267 90 294C140 267 141 224 90 190Z"/><path d="M90 200V300M53 229L127 273M127 229L53 273"/><path d="M90 302C43 330 45 371 90 397C135 371 137 330 90 302Z"/><path d="M90 310V405M57 339L123 379M123 339L57 379"/></g>
-     <g fill="#e4c47b"><circle cx="90" cy="184" r="4"/><circle cx="90" cy="294" r="4"/><circle cx="90" cy="397" r="4"/></g>
-     <path d="M156 432V104Q156 44 90 34" fill="none" stroke="#f7df9e" stroke-width="1" opacity=".7"/>
-    </svg>
-   </div>
-   <div class="gate-center"><div class="gate-medallion" aria-label="Nameless royal family seal">
-    <svg class="family-seal" viewBox="0 0 100 100" role="img" aria-label="Royal family crest with conch, ship and horse motifs">
-     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M50 7 56 16 67 15 69 25 80 30 76 40 87 49 79 58 82 69 69 73 66 84 54 82 50 93 44 82 32 84 30 73 18 69 21 58 13 49 24 40 20 30 31 25 33 15 44 16Z" stroke-width="1.5"/>
-      <path d="M50 20c-12 0-21 10-21 23v22c0 12 9 19 21 19s21-7 21-19V43c0-13-9-23-21-23Z" stroke-width="1.7"/>
-      <path d="M50 31c-5 5-8 10-8 16 0 7 4 12 8 17 4-5 8-10 8-17 0-6-3-11-8-16Z" stroke-width="1.8"/>
-      <path d="M50 39c-3 5-4 9-2 13 2 4 5 6 9 7-2-5-2-9 0-13" stroke-width="1.6"/>
-      <path d="M39 69c4-3 7-4 11-4s7 1 11 4M43 76h14" stroke-width="1.4"/>
-      <path d="M8 53 23 48 29 53 25 61 10 61 8 53Zm3 9 5 5 12-1M12 50l-3-5m8 4-1-7m7 8 3-5" stroke-width="1.4"/>
-      <path d="M72 54c4-7 11-8 16-4l4 7-4 7H76l-4-4Zm5-5-1-7 5 4 4-4 2 7m-10 16-3 8m10-8 2 8m-8-18 5 2" stroke-width="1.4"/>
-      <path d="M32 12c3-5 8-7 13-6l5 4 5-4c5-1 10 1 13 6M40 11l-3 5m23-5 3 5M44 8l6-4 6 4" stroke-width="1.5"/>
-      <path d="M25 88c8 4 16 6 25 6s17-2 25-6M31 91l-5 4m43-4 5 4" stroke-width="1.3"/>
-     </g>
-     <path d="M50 31c-5 5-8 10-8 16 0 7 4 12 8 17 4-5 8-10 8-17 0-6-3-11-8-16Z" fill="currentColor" opacity=".18"/>
-    </svg>
-   </div><p>Two hearts. One forever.</p><button class="button primary" id="openInvite">Enter the celebration <span>↗</span></button><div class="gate-hint">TAP TO OPEN THE GATES</div></div>
+   <svg class="gw-garland" viewBox="0 0 720 900" aria-hidden="true" focusable="false"><path d="M182 520C182 430 290 360 360 290C430 360 538 430 538 520" fill="none" stroke="#e07a0f" stroke-width="10" stroke-dasharray="0 10.5" stroke-linecap="round"/><path d="M182 520C182 430 290 360 360 290C430 360 538 430 538 520" fill="none" stroke="#ffc83d" stroke-width="6.5" stroke-dasharray="0 10.5" stroke-dashoffset="-5.25" stroke-linecap="round"/><path d="M182 520C182 430 290 360 360 290C430 360 538 430 538 520" fill="none" stroke="#fff3bd" stroke-width="2.2" stroke-dasharray="0 10.5" stroke-linecap="round" opacity=".85"/><path d="M185.1 496.6V557.6" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M185.1 496.6V557.6" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="185.1" cy="563.6" r="7.5" fill="#e07a0f"/><circle cx="185.1" cy="563.6" r="4.2" fill="#ffd45e"/><path d="M185.1 570.6v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M534.9 496.6V557.6" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M534.9 496.6V557.6" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="534.9" cy="563.6" r="7.5" fill="#e07a0f"/><circle cx="534.9" cy="563.6" r="4.2" fill="#ffd45e"/><path d="M534.9 570.6v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M198.6 461.4V504.4" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M198.6 461.4V504.4" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="198.6" cy="510.4" r="7.5" fill="#e07a0f"/><circle cx="198.6" cy="510.4" r="4.2" fill="#ffd45e"/><path d="M198.6 517.4v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M521.4 461.4V504.4" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M521.4 461.4V504.4" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="521.4" cy="510.4" r="7.5" fill="#e07a0f"/><circle cx="521.4" cy="510.4" r="4.2" fill="#ffd45e"/><path d="M521.4 517.4v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M220.8 428.0V485.0" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M220.8 428.0V485.0" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="220.8" cy="491.0" r="7.5" fill="#e07a0f"/><circle cx="220.8" cy="491.0" r="4.2" fill="#ffd45e"/><path d="M220.8 498.0v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M499.2 428.0V485.0" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M499.2 428.0V485.0" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="499.2" cy="491.0" r="7.5" fill="#e07a0f"/><circle cx="499.2" cy="491.0" r="4.2" fill="#ffd45e"/><path d="M499.2 498.0v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M249.1 396.0V431.0" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M249.1 396.0V431.0" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="249.1" cy="437.0" r="7.5" fill="#e07a0f"/><circle cx="249.1" cy="437.0" r="4.2" fill="#ffd45e"/><path d="M249.1 444.0v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M470.9 396.0V431.0" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M470.9 396.0V431.0" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="470.9" cy="437.0" r="7.5" fill="#e07a0f"/><circle cx="470.9" cy="437.0" r="4.2" fill="#ffd45e"/><path d="M470.9 444.0v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M285.9 360.9V409.9" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M285.9 360.9V409.9" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="285.9" cy="415.9" r="7.5" fill="#e07a0f"/><circle cx="285.9" cy="415.9" r="4.2" fill="#ffd45e"/><path d="M285.9 422.9v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M434.1 360.9V409.9" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M434.1 360.9V409.9" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="434.1" cy="415.9" r="7.5" fill="#e07a0f"/><circle cx="434.1" cy="415.9" r="4.2" fill="#ffd45e"/><path d="M434.1 422.9v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M324.1 326.7V357.7" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M324.1 326.7V357.7" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="324.1" cy="363.7" r="7.5" fill="#e07a0f"/><circle cx="324.1" cy="363.7" r="4.2" fill="#ffd45e"/><path d="M324.1 370.7v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M395.9 326.7V357.7" stroke="#e07a0f" stroke-width="7" stroke-dasharray="0 8.6" stroke-linecap="round" fill="none"/><path d="M395.9 326.7V357.7" stroke="#ffc83d" stroke-width="4.2" stroke-dasharray="0 8.6" stroke-dashoffset="-4.3" stroke-linecap="round" fill="none"/><circle cx="395.9" cy="363.7" r="7.5" fill="#e07a0f"/><circle cx="395.9" cy="363.7" r="4.2" fill="#ffd45e"/><path d="M395.9 370.7v9" stroke="#8a1f3c" stroke-width="2.4" stroke-linecap="round"/><path d="M156 270V560" stroke="#e07a0f" stroke-width="8" stroke-dasharray="0 9.6" stroke-linecap="round" fill="none"/><path d="M156 270V560" stroke="#ffc83d" stroke-width="5" stroke-dasharray="0 9.6" stroke-dashoffset="-4.8" stroke-linecap="round" fill="none"/><circle cx="156" cy="568" r="9" fill="#e07a0f"/><circle cx="156" cy="568" r="5.2" fill="#ffd45e"/><path d="M156 577v14" stroke="#8a1f3c" stroke-width="2.6" stroke-linecap="round"/><path d="M564 270V560" stroke="#e07a0f" stroke-width="8" stroke-dasharray="0 9.6" stroke-linecap="round" fill="none"/><path d="M564 270V560" stroke="#ffc83d" stroke-width="5" stroke-dasharray="0 9.6" stroke-dashoffset="-4.8" stroke-linecap="round" fill="none"/><circle cx="564" cy="568" r="9" fill="#e07a0f"/><circle cx="564" cy="568" r="5.2" fill="#ffd45e"/><path d="M564 577v14" stroke="#8a1f3c" stroke-width="2.6" stroke-linecap="round"/></svg>
+   <div class="gw-seal" aria-hidden="true"><svg class="family-seal" viewBox="0 0 100 100" role="img" aria-label="Royal family crest with conch, ship and horse motifs"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M50 7 56 16 67 15 69 25 80 30 76 40 87 49 79 58 82 69 69 73 66 84 54 82 50 93 44 82 32 84 30 73 18 69 21 58 13 49 24 40 20 30 31 25 33 15 44 16Z" stroke-width="1.5"/><path d="M50 20c-12 0-21 10-21 23v22c0 12 9 19 21 19s21-7 21-19V43c0-13-9-23-21-23Z" stroke-width="1.7"/><path d="M50 31c-5 5-8 10-8 16 0 7 4 12 8 17 4-5 8-10 8-17 0-6-3-11-8-16Z" stroke-width="1.8"/><path d="M50 39c-3 5-4 9-2 13 2 4 5 6 9 7-2-5-2-9 0-13" stroke-width="1.6"/><path d="M39 69c4-3 7-4 11-4s7 1 11 4M43 76h14" stroke-width="1.4"/><path d="M8 53 23 48 29 53 25 61 10 61 8 53Zm3 9 5 5 12-1M12 50l-3-5m8 4-1-7m7 8 3-5" stroke-width="1.4"/><path d="M72 54c4-7 11-8 16-4l4 7-4 7H76l-4-4Zm5-5-1-7 5 4 4-4 2 7m-10 16-3 8m10-8 2 8m-8-18 5 2" stroke-width="1.4"/><path d="M32 12c3-5 8-7 13-6l5 4 5-4c5-1 10 1 13 6M40 11l-3 5m23-5 3 5M44 8l6-4 6 4" stroke-width="1.5"/><path d="M25 88c8 4 16 6 25 6s17-2 25-6M31 91l-5 4m43-4 5 4" stroke-width="1.3"/></g><path d="M50 31c-5 5-8 10-8 16 0 7 4 12 8 17 4-5 8-10 8-17 0-6-3-11-8-16Z" fill="currentColor" opacity=".18"/></svg></div>
   </div>
-  <div class="gate-foot">WITH THE BLESSINGS OF OUR FAMILIES</div>
+  <div class="gw-flash"></div>
+ </div>
+ <div class="gw-foot">
+  <button class="button primary" id="openInvite" type="button">Enter the celebration <span aria-hidden="true">↗</span></button>
+  <div class="gw-hint">TAP TO OPEN THE GATES</div>
+  <div class="gw-bless">WITH THE BLESSINGS OF OUR FAMILIES</div>
  </div>
 </div>
 <section class="hero" id="home">
@@ -425,39 +418,85 @@ section:not(.hero) .paper{border-radius:2px}
  <svg class="floral br" viewBox="0 0 200 220" fill="none" aria-hidden="true"><g stroke="#78866e" stroke-width="1.2"><path d="M6 208C39 169 42 111 85 69C112 43 145 28 188 12"/><path d="M49 158C16 151 12 128 28 119C44 111 57 132 49 158ZM70 116C40 105 43 83 59 78C77 75 84 97 70 116ZM100 75C76 56 87 37 103 39C121 43 119 63 100 75ZM126 51C116 26 133 13 147 23C159 35 146 49 126 51Z"/><path d="M43 171C65 169 74 183 65 194C55 204 41 190 43 171Z"/></g></svg>
  <div class="paper reveal">
  <div class="ganesh-emblem" aria-label="Lord Ganesha">
-  <svg class="ganesh-mark" viewBox="0 0 240 270" role="img" aria-labelledby="ganeshTitle">
-   <title id="ganeshTitle">Traditional gold illustration of Lord Ganesha</title>
-   <defs>
-    <linearGradient id="ganeshGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1d77b"/><stop offset=".45" stop-color="#b88726"/><stop offset=".72" stop-color="#f3d45c"/><stop offset="1" stop-color="#8f5d18"/></linearGradient>
-   </defs>
-   <g stroke="url(#ganeshGold)" stroke-linecap="round" stroke-linejoin="round">
-    <!-- crown -->
-    <path d="M83 50 91 25 120 8 149 25 157 50 139 42 120 31 101 42Z" fill="url(#ganeshGold)" stroke-width="3"/>
-    <path d="M101 40 120 17 139 40M120 8V2" fill="none" stroke-width="2.5"/>
-    <circle cx="120" cy="7" r="4" fill="#c69a3b" stroke="none"/>
-    <!-- broad elephant ears -->
-    <path d="M82 77C55 46 22 53 15 84 8 115 35 139 79 127L91 111M158 77C185 46 218 53 225 84 232 115 205 139 161 127L149 111" fill="#f4e5bd" fill-opacity=".28" stroke-width="4"/>
-    <path d="M75 83C52 65 34 76 37 97 40 113 57 119 78 111M165 83c23-18 41-7 38 14-3 16-20 22-41 14" fill="none" stroke-width="2"/>
-    <!-- head silhouette -->
-    <path d="M79 75C79 48 96 37 120 37s41 11 41 38v54c0 36-18 59-41 59s-41-23-41-59Z" fill="#f1dcae" fill-opacity=".25" stroke-width="4"/>
-    <!-- tilak -->
-    <path d="M112 54c2-8 5-13 8-17 3 4 6 9 8 17M120 51v15" fill="none" stroke-width="3"/>
-    <!-- eyes -->
-    <path d="M94 99q10-10 20 0M126 99q10-10 20 0" fill="none" stroke-width="3.5"/>
-    <circle cx="104" cy="101" r="2.5" fill="#98691f" stroke="none"/><circle cx="136" cy="101" r="2.5" fill="#98691f" stroke="none"/>
-    <!-- tusks -->
-    <path d="M84 126q-13 13-3 24 9 8 17-5M156 126q13 13 3 24-9 8-17-5" fill="none" stroke-width="3"/>
-    <!-- trunk with unmistakable curl -->
-    <path d="M111 113c-2 28-1 49 14 61 11 9 29 7 36 20 8 16-3 34-21 36-16 2-28-9-24-22 3-9 12-13 21-10" fill="none" stroke-width="8"/>
-    <path d="M119 122c0 22 4 37 17 47 9 7 22 9 27 20" fill="none" stroke-width="2.2"/>
-    <!-- sacred necklace -->
-    <path d="M88 169q32 30 64 0M96 179q24 25 48 0" fill="none" stroke-width="2.5"/>
-    <!-- lotus base -->
-    <path d="M120 221c-10-21-32-25-43-11 12 18 28 23 43 11Zm0 0c10-21 32-25 43-11-12 18-28 23-43 11Zm-47 17q47 17 94 0M90 244q30 14 60 0" fill="none" stroke-width="2.5"/>
-    <!-- side ornaments -->
-    <path d="M57 151q-18 9-19 29m145-29q18 9 19 29" fill="none" stroke-width="2"/>
-   </g>
-  </svg>
+  <svg class="ganesh-mark" viewBox="0 0 300 340" role="img" aria-labelledby="ganeshTitle"><title id="ganeshTitle">Lord Ganesha</title>
+<defs>
+ <linearGradient id="gngG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8e3a0"/><stop offset=".45" stop-color="#d3a23a"/><stop offset="1" stop-color="#9c6b1d"/></linearGradient>
+ <linearGradient id="gngH" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a8751f"/><stop offset=".3" stop-color="#f6df97"/><stop offset=".55" stop-color="#d3a23a"/><stop offset="1" stop-color="#9c6b1d"/></linearGradient>
+ <radialGradient id="gnface" cx=".5" cy=".38" r=".7"><stop offset="0" stop-color="#fff4d2"/><stop offset=".7" stop-color="#f5deA0"/><stop offset="1" stop-color="#e3bf6c"/></radialGradient>
+ <radialGradient id="gnhalo" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#f3dfa6" stop-opacity=".55"/><stop offset="1" stop-color="#f3dfa6" stop-opacity="0"/></radialGradient>
+ <linearGradient id="gngT" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cf9d37"/><stop offset=".42" stop-color="#fbe9a8"/><stop offset="1" stop-color="#c48f2d"/></linearGradient>
+ <linearGradient id="gngB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6dd92"/><stop offset=".6" stop-color="#d8a843"/><stop offset="1" stop-color="#b0792a"/></linearGradient>
+ <linearGradient id="gnivory" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffbe9"/><stop offset="1" stop-color="#ecd49a"/></linearGradient>
+ <linearGradient id="gnpetal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3d6"/><stop offset="1" stop-color="#e9b9a0"/></linearGradient>
+ <g id="gnear">
+  <path d="M100 88C74 46 28 46 18 92 8 130 36 178 86 174 100 172 108 164 112 154Z" fill="url(#gnivory)" stroke="url(#gngG)" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M97 98C78 70 46 72 38 99 31 125 50 156 86 156 95 154 100 148 104 142Z" fill="#e9c677" fill-opacity=".55" stroke="#b8872a" stroke-width="1.4"/>
+  <path d="M92 108C78 92 58 94 52 110M90 124C76 112 62 114 58 126M88 140C78 132 68 134 66 142" fill="none" stroke="#b8872a" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="30" cy="104" r="2" fill="#b8872a"/><circle cx="26" cy="120" r="2" fill="#b8872a"/>
+ </g>
+</defs>
+<!-- halo -->
+<circle cx="150" cy="128" r="118" fill="url(#gnhalo)"/>
+<circle cx="150" cy="128" r="112" fill="none" stroke="url(#gngG)" stroke-width="1.4"/>
+<circle cx="150" cy="128" r="106" fill="none" stroke="#c9972f" stroke-width="3" stroke-dasharray="0 6.6" stroke-linecap="round"/>
+<!-- ears -->
+<use href="#gnear"/>
+<use href="#gnear" transform="translate(300 0) scale(-1 1)"/>
+<!-- bust -->
+<path d="M104 160C82 168 68 190 66 222L66 274C100 286 200 286 234 274L234 222C232 190 218 168 196 160Z" fill="url(#gngB)" stroke="#8f5d18" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M66 232Q82 244 100 232M200 232Q218 244 234 232" fill="none" stroke="#fff0bb" stroke-width="2.4" stroke-linecap="round"/>
+<g fill="#8a1f3c" stroke="#fff0bb" stroke-width="1.2"><circle cx="82" cy="241" r="3"/><circle cx="218" cy="241" r="3"/></g>
+<path d="M66 262C110 276 190 276 234 262" fill="none" stroke="#fff0bb" stroke-width="1.6" stroke-dasharray="0 5" stroke-linecap="round"/>
+<!-- necklace -->
+<path d="M102 170C108 228 192 228 198 170" fill="none" stroke="#fff0bb" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M112 176C120 216 180 216 188 176" fill="none" stroke="#681d32" stroke-width="2.2" stroke-dasharray="0 5.2" stroke-linecap="round"/>
+<path d="M150 214l8 10-8 12-8-12z" fill="#8a1f3c" stroke="#fff0bb" stroke-width="1.8"/>
+<!-- head -->
+<path d="M100 80C94 112 98 144 116 164 130 178 170 178 184 164 202 144 206 112 200 80Z" fill="url(#gnface)" stroke="url(#gngG)" stroke-width="3.4" stroke-linejoin="round"/>
+<!-- cheeks -->
+<path d="M110 146C114 154 122 160 130 162M190 146C186 154 178 160 170 162" fill="none" stroke="#c9972f" stroke-width="1.6" stroke-linecap="round"/>
+<!-- crown -->
+<path d="M100 82C100 70 106 64 114 61L186 61C194 64 200 70 200 82Q150 70 100 82Z" fill="url(#gngH)" stroke="#8f5d18" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M112 63C108 46 118 36 127 31L134 38 142 22 150 6 158 22 166 38 173 31C182 36 192 46 188 63Z" fill="url(#gngG)" stroke="#8f5d18" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M124 60C122 50 128 44 134 42M176 60C178 50 172 44 166 42" fill="none" stroke="#fff0bb" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="150" cy="40" r="6.5" fill="#8a1f3c" stroke="#fff0bb" stroke-width="1.8"/>
+<circle cx="130" cy="52" r="3.4" fill="#8a1f3c" stroke="#fff0bb" stroke-width="1.2"/><circle cx="170" cy="52" r="3.4" fill="#8a1f3c" stroke="#fff0bb" stroke-width="1.2"/>
+<circle cx="150" cy="6" r="3.2" fill="#fff0bb" stroke="#8f5d18" stroke-width="1"/>
+<circle cx="127" cy="29" r="2.6" fill="#fff0bb" stroke="#8f5d18" stroke-width="1"/><circle cx="173" cy="29" r="2.6" fill="#fff0bb" stroke="#8f5d18" stroke-width="1"/>
+<g fill="#fff0bb" stroke="#8f5d18" stroke-width=".8"><circle cx="106" cy="76" r="2.4"/><circle cx="122" cy="73" r="2.4"/><circle cx="138" cy="73" r="2.4"/><circle cx="162" cy="73" r="2.4"/><circle cx="178" cy="73" r="2.4"/><circle cx="194" cy="76" r="2.4"/></g>
+<!-- tilak -->
+<g fill="none" stroke="#8a1f3c" stroke-width="3.4" stroke-linecap="round"><path d="M150 82V99"/><path d="M150 99C141 98 139 91 140 84M150 99C159 98 161 91 160 84"/></g>
+<!-- eyes -->
+<g id="gneyeL">
+ <path d="M104 110Q120 99 136 110Q120 121 104 110Z" fill="#fffaf0" stroke="#681d32" stroke-width="2"/>
+ <circle cx="120" cy="110" r="4.6" fill="#681d32"/><circle cx="121.5" cy="108.6" r="1.4" fill="#fff"/>
+ <path d="M100 99Q120 85 140 99" fill="none" stroke="#681d32" stroke-width="3.4" stroke-linecap="round"/>
+</g>
+<use href="#gneyeL" transform="translate(300 0) scale(-1 1)"/>
+<!-- tusks -->
+<path d="M127 154C110 164 102 182 109 200" fill="none" stroke="#8a5a17" stroke-width="12" stroke-linecap="round"/>
+<path d="M127 154C110 164 102 182 109 200" fill="none" stroke="url(#gnivory)" stroke-width="8" stroke-linecap="round"/>
+<path d="M173 156C183 162 187 170 186 180" fill="none" stroke="#8a5a17" stroke-width="12" stroke-linecap="round"/>
+<path d="M173 156C183 162 187 170 186 180" fill="none" stroke="url(#gnivory)" stroke-width="8" stroke-linecap="round"/>
+<!-- trunk -->
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M150 108C150 140 146 164 152 184" stroke="#9c6b1d" stroke-width="28.5"/>
+ <path d="M152 184C158 204 182 208 190 194" stroke="#9c6b1d" stroke-width="22.5"/>
+ <path d="M190 194C196 182 188 172 178 178" stroke="#9c6b1d" stroke-width="15.5"/>
+ <path d="M150 108C150 140 146 164 152 184" stroke="url(#gngT)" stroke-width="24"/>
+ <path d="M152 184C158 204 182 208 190 194" stroke="url(#gngT)" stroke-width="18"/>
+ <path d="M190 194C196 182 188 172 178 178" stroke="url(#gngT)" stroke-width="11"/>
+ <g stroke="#7b4f12" stroke-width="1.3"><path d="M141 128Q150 133 159 128M141 140Q150 145 159 140M141 152Q150 157 159 152M142 164Q151 169 160 164"/></g>
+</g>
+<!-- lotus -->
+<g transform="translate(150 326) scale(.92)">
+ <g id="gnpet"><path d="M0 0C-24 -22 -22 -52 0 -78 22 -52 24 -22 0 0Z" fill="url(#gnpetal)" stroke="url(#gngG)" stroke-width="2.2"/><path d="M0 -8V-64" stroke="#d3a23a" stroke-width="1.2"/></g>
+ <use href="#gnpet" transform="rotate(-72) "/><use href="#gnpet" transform="rotate(72)"/>
+ <use href="#gnpet" transform="rotate(-48)"/><use href="#gnpet" transform="rotate(48)"/>
+ <use href="#gnpet" transform="rotate(-24)"/><use href="#gnpet" transform="rotate(24)"/>
+ <use href="#gnpet"/>
+</g>
+</svg>
   <div class="ganesh-caption">॥ श्री गणेशाय नमः ॥</div>
  </div>
  <div class="eyebrow">Together with our families</div>
@@ -486,7 +525,10 @@ section:not(.hero) .paper{border-radius:2px}
  <div class="paper reveal"><div class="eyebrow">The days are drawing near</div><h2>Until We Say “I Do”</h2><p class="copy">We look forward to sharing this beautiful day with you.</p><div class="countdown"><div class="unit"><strong id="days">00</strong><span>Days</span></div><div class="unit"><strong id="hours">00</strong><span>Hours</span></div><div class="unit"><strong id="minutes">00</strong><span>Minutes</span></div><div class="unit"><strong id="seconds">00</strong><span>Seconds</span></div></div><div class="rule"></div><h1 style="font-size:clamp(3.3rem,10vw,5.5rem)">Aniket <span style="font-size:.65em;color:var(--gold)">&</span> Avina</h1><p class="copy">With love and blessings, we can't wait to celebrate with you.</p><button class="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to the beginning ↑</button></div></section>
 <footer>Made with love for the beginning of forever.<br><span style="font:300 .62rem Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase">3 December 2026 · Raigad, Maharashtra</span></footer>
 <script>
-const opening=document.getElementById("opening");const openButton=document.getElementById("openInvite");let entranceStarted=false;function openInvitation(){if(entranceStarted)return;entranceStarted=true;opening.classList.add("gates-open");openButton.disabled=true;openButton.innerHTML="Welcome to the celebration";setTimeout(()=>{opening.classList.add("closed");document.body.style.overflow="";setTimeout(()=>document.querySelector("#home").scrollIntoView({behavior:"smooth",block:"start"}),120)},1550)}openButton.addEventListener("click",openInvitation);document.body.style.overflow="hidden";
+const gateway=document.getElementById("gateway"),openButton=document.getElementById("openInvite"),gwStage=document.getElementById("gwStage");let entranceStarted=false;
+function openInvitation(){if(entranceStarted)return;entranceStarted=true;gateway.classList.add("gates-open");openButton.disabled=true;openButton.innerHTML="Welcome";
+setTimeout(()=>{gateway.classList.add("closed");document.body.style.overflow="";window.scrollTo(0,0)},3700)}
+openButton.addEventListener("click",openInvitation);gwStage.addEventListener("click",openInvitation);document.body.style.overflow="hidden";
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('shown');io.unobserve(e.target)}}),{threshold:.13});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const target=new Date('2026-12-03T17:05:00+05:30').getTime();function tick(){let d=Math.max(0,target-Date.now());document.getElementById('days').textContent=String(Math.floor(d/86400000)).padStart(2,'0');document.getElementById('hours').textContent=String(Math.floor(d%86400000/3600000)).padStart(2,'0');document.getElementById('minutes').textContent=String(Math.floor(d%3600000/60000)).padStart(2,'0');document.getElementById('seconds').textContent=String(Math.floor(d%60000/1000)).padStart(2,'0')}tick();setInterval(tick,1000);
 </script>
