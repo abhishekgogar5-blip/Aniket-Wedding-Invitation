@@ -341,16 +341,36 @@ section:not(.hero) .paper{border-radius:2px}
  .gate-arch:before{box-shadow:inset 0 0 0 5px #f7f0df,inset 0 0 0 7px #d6b56d88,0 0 25px #6b4b251a}
 }
 
+
+/* Replace crude vector mascots with genuine Indian miniature artwork */
+.gate-foliage{position:absolute;z-index:1;top:-3%;width:clamp(120px,22vw,230px);height:260px;object-fit:cover;object-position:center 20%;opacity:.62;mix-blend-mode:multiply;filter:saturate(.75) contrast(1.05);pointer-events:none;border-radius:0 0 55% 55%;mask-image:linear-gradient(to bottom,#000 0%,#000 58%,transparent 100%)}
+.gate-foliage-left{left:-2%;transform:rotate(-16deg)}
+.gate-foliage-right{right:-2%;transform:scaleX(-1) rotate(-16deg)}
+.gate-elephant{position:absolute;z-index:4;bottom:2%;width:clamp(150px,24vw,245px);height:auto;aspect-ratio:1/1;object-fit:contain;mix-blend-mode:multiply;opacity:.98;filter:drop-shadow(0 12px 10px #4c321e30);pointer-events:none}
+.gate-elephant-left{left:1%}
+.gate-elephant-right{right:1%;transform:scaleX(-1)}
+.gate-arch{z-index:2}
+.gate-doorway{z-index:3}
+.gate-center{z-index:5}
+@media(max-width:640px){
+ .gate-foliage{width:clamp(100px,28vw,140px);height:180px;top:0}
+ .gate-foliage-left{left:-8%}.gate-foliage-right{right:-8%}
+ .gate-elephant{width:clamp(112px,29vw,150px);bottom:3%}
+ .gate-elephant-left{left:-3%}.gate-elephant-right{right:-3%}
+}
+
 </style>
 </head>
 <body>
 <div id="opening" aria-label="Wedding invitation entrance">
  <div class="gate-sky"></div><div class="gate-halo"></div>
 
- <div class="gate-foliage gate-foliage-left" aria-hidden="true"><svg viewBox="0 0 180 220"><g fill="none" stroke="#526b43" stroke-width="5" stroke-linecap="round"><path d="M12 205Q20 85 155 12"/><path d="M22 174Q-2 105 12 68Q54 92 22 174Z" fill="#6d824d"/><path d="M38 145Q23 64 53 27Q88 68 38 145Z" fill="#83945b"/><path d="M70 105Q80 31 129 9Q139 68 70 105Z" fill="#657c47"/><path d="M18 174 12 68M38 145 53 27M70 105 129 9"/></g></svg></div>
- <div class="gate-foliage gate-foliage-right" aria-hidden="true"><svg viewBox="0 0 180 220"><g fill="none" stroke="#526b43" stroke-width="5" stroke-linecap="round"><path d="M168 205Q160 85 25 12"/><path d="M158 174Q182 105 168 68Q126 92 158 174Z" fill="#6d824d"/><path d="M142 145Q157 64 127 27Q92 68 142 145Z" fill="#83945b"/><path d="M110 105Q100 31 51 9Q41 68 110 105Z" fill="#657c47"/><path d="M162 174 168 68M142 145 127 27M110 105 51 9"/></g></svg></div>
- <div class="gate-elephant gate-elephant-left" aria-hidden="true"><svg viewBox="0 0 220 230"><g stroke="#bd9345" stroke-width="2" stroke-linejoin="round"><path d="M43 105Q34 66 68 53Q102 35 142 57Q178 76 174 126L166 173H135L129 132H91L83 174H51L50 135Q30 132 25 111Z" fill="#243b52"/><path d="M44 89Q12 69 17 112Q18 143 51 143L69 121Z" fill="#172c40"/><path d="M166 91Q193 75 191 111Q190 143 163 145L148 119Z" fill="#172c40"/><path d="M163 113Q190 130 179 162Q174 178 159 181L151 172Q165 158 155 145" fill="#243b52"/><path d="M157 142Q179 145 181 163Q172 166 164 159" fill="#f1dfbd"/><path d="M55 68Q105 45 158 69L164 113Q108 130 47 111Z" fill="#8b1f31" stroke-width="3"/><path d="M59 74Q107 54 154 75M52 105Q108 122 161 106" fill="none" stroke="#f0d18a" stroke-width="3"/><path d="M70 72l10 34m14-40 8 43m16-42 5 43m17-39 3 35" fill="none" stroke="#d7b46a" stroke-width="2"/><path d="M62 83l89 20M75 65l76 40" fill="none" stroke="#f2d995" stroke-width="1.5"/><path d="M60 173v28h23v-28m51 0v28h23v-28" fill="#172c40"/><path d="M56 201h30m44 0h30" fill="none" stroke="#e4c47b" stroke-width="5"/><path d="M32 106q-17 3-18 20m4-9-9 7" fill="none" stroke="#d6b36a" stroke-width="3"/><circle cx="46" cy="99" r="3" fill="#f5d990"/><path d="M80 57l8-13 9 12m19-6 8-12 9 14" fill="#e6c77b"/><path d="M96 135q13 9 27 0" fill="none" stroke="#d8b56d" stroke-width="2"/></g></svg></div>
- <div class="gate-elephant gate-elephant-right" aria-hidden="true"><svg viewBox="0 0 220 230"><g stroke="#bd9345" stroke-width="2" stroke-linejoin="round"><path d="M43 105Q34 66 68 53Q102 35 142 57Q178 76 174 126L166 173H135L129 132H91L83 174H51L50 135Q30 132 25 111Z" fill="#243b52"/><path d="M44 89Q12 69 17 112Q18 143 51 143L69 121Z" fill="#172c40"/><path d="M166 91Q193 75 191 111Q190 143 163 145L148 119Z" fill="#172c40"/><path d="M163 113Q190 130 179 162Q174 178 159 181L151 172Q165 158 155 145" fill="#243b52"/><path d="M157 142Q179 145 181 163Q172 166 164 159" fill="#f1dfbd"/><path d="M55 68Q105 45 158 69L164 113Q108 130 47 111Z" fill="#8b1f31" stroke-width="3"/><path d="M59 74Q107 54 154 75M52 105Q108 122 161 106" fill="none" stroke="#f0d18a" stroke-width="3"/><path d="M70 72l10 34m14-40 8 43m16-42 5 43m17-39 3 35" fill="none" stroke="#d7b46a" stroke-width="2"/><path d="M62 83l89 20M75 65l76 40" fill="none" stroke="#f2d995" stroke-width="1.5"/><path d="M60 173v28h23v-28m51 0v28h23v-28" fill="#172c40"/><path d="M56 201h30m44 0h30" fill="none" stroke="#e4c47b" stroke-width="5"/><path d="M32 106q-17 3-18 20m4-9-9 7" fill="none" stroke="#d6b36a" stroke-width="3"/><circle cx="46" cy="99" r="3" fill="#f5d990"/><path d="M80 57l8-13 9 12m19-6 8-12 9 14" fill="#e6c77b"/><path d="M96 135q13 9 27 0" fill="none" stroke="#d8b56d" stroke-width="2"/></g></svg></div>
+
+ <img class="gate-foliage gate-foliage-left" src="https://commons.wikimedia.org/wiki/Special:FilePath/Small_banana_plant.jpg" alt="" aria-hidden="true">
+ <img class="gate-foliage gate-foliage-right" src="https://commons.wikimedia.org/wiki/Special:FilePath/Small_banana_plant.jpg" alt="" aria-hidden="true">
+ <img class="gate-elephant gate-elephant-left" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/India%2C_Rajasthan%2C_Mewar_school_-_Caparisoned_Elephant_with_a_Mahout_-_2005.202_-_Cleveland_Museum_of_Art.jpg" alt="Traditional Rajasthani royal elephant with ceremonial caparison and mahout">
+ <img class="gate-elephant gate-elephant-right" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/India%2C_Rajasthan%2C_Mewar_school_-_Caparisoned_Elephant_with_a_Mahout_-_2005.202_-_Cleveland_Museum_of_Art.jpg" alt="Traditional Rajasthani royal elephant with ceremonial caparison and mahout">
+
 
  <div class="gate-arch">
   <div class="arch-crown"><span>✦</span><i></i><span>❧</span><i></i><span>✦</span></div>
